@@ -14,12 +14,25 @@ $font-secondary: 'Raleway', sans-serif;
 }
 body {
    min-width: 320px;
-   background: #FFF;
+   background: #F7F7F7;
 }
 
 .hidden{
    display: none;
 }
+
+h1,
+h2,
+h3,
+span{
+font-family: $font-secondary;
+}
+
+p,
+button{
+   font-family: $font-primary;
+}
+
 
 /*------------------------HEADER STYLES----------------*/
 
@@ -31,7 +44,6 @@ body {
    &__logo{
       display: inline-block;
       color: #08A6E4;
-      font-family:$font-secondary;
       font-size: 32px;
       font-weight: 300;
    }
@@ -71,7 +83,6 @@ body {
    
    &__heading{
       margin: 0 auto 2rem auto;
-      font-family: $font-secondary;
       font-size: 35px;
       font-weight: 400;
    }
@@ -87,7 +98,6 @@ body {
    &__button{
       margin: 0 auto 2rem auto;
       color: #FFF;
-      font-family: $font-primary;
       font-size: 16px;
       font-weight: 700;
       display: block ;
@@ -111,6 +121,126 @@ body {
       position: absolute;
       left: 50%; 
       transform: translateX(-50%); 
-    
    }
+
+   &__subheading{
+      margin: 0 auto 2rem auto;
+      font-size: 36px;
+      font-weight: 400;
+      max-width: 300px;
+   }
+
+}
+
+.icon{
+   margin: 2rem auto;
+   position: relative;
+   height: 62px;
+
+   &__bg{
+      position: absolute;
+      left: 50%; 
+      transform: translateX(-50%); 
+   }
+
+   &__img{
+      position: absolute;
+      top: 50%; 
+      transform: translateY(-50%);   
+   }
+
+   &__numbers{
+      display: block;
+      font-size: 20px;
+      font-weight: 800;
+   }
+
+
+   &__text{
+      color: #A5A5A5;
+      display: block;
+      font-size: 17px;
+      font-weight: 400;
+   }
+}
+
+/*----------------BENEFITS STYLES--------------*/
+
+.benefits{
+   padding: 0 2em;
+}
+
+.benefits__article{
+   position: relative;
+   padding: 1em;
+   background: #FFF;
+   border-radius: 5px;
+   border: 1px solid #E8E9ED;
+   margin: 2em auto;
+}
+
+.article__icon{
+   margin: 2rem auto;
+   position: relative;
+   height: 134px;
+
+   .icon__bg{
+      position: absolute;
+      height: 100%;
+      left: 50%;
+      top: -30%;
+      transform: translateX(0%); 
+   }
+
+   .icon__img{
+      position: absolute;
+      height: 100%;
+      left: 50%; 
+      top: 0;
+      transform: translateX(-50%); 
+   }
+
+   .icon__bg--alt{
+      position: absolute;
+      height: 100%;
+      left: 50%; 
+      top: 0;
+      transform: translateX(-50%); 
+   }
+
+   .icon__img--alt{
+      position: absolute;
+      height: 100%;
+      left: 50%; 
+      top: 10%;
+      transform: translateX(-40%); 
+   }
+}
+
+.article__icon--full{
+   position: relative;
+   .icon__bg--full{
+      height: 195px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+   }
+
+   .icon__img--full{
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 10%);
+      
+   }
+}
+
+.article__heading{
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.article__text{
+   margin: 1rem 0;
+   font-size: 14px;
+   font-weight: 400;
 }
