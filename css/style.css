@@ -227,10 +227,11 @@ button {
   font-weight: 400;
 }
 .pricing__card {
-  margin-top: 4em;
+  margin: 4em auto;
   border-radius: 18px;
   border: 1px solid #FB3B64;
   min-height: 277px;
+  max-width: 350px;
   position: relative;
   padding: 2em;
 }
@@ -239,6 +240,16 @@ button {
   border-radius: 18px;
   border: 1px solid #07ACE6;
   min-height: 277px;
+  position: relative;
+  padding: 2em;
+  box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
+}
+.pricing__card--green {
+  margin: 4em auto;
+  border-radius: 18px;
+  border: 1px solid #55DFB4;
+  min-height: 277px;
+  max-width: 350px;
   position: relative;
   padding: 2em;
 }
@@ -259,6 +270,11 @@ button {
 }
 .pricing .card__column-left .card__price--blue {
   color: #07ACE6;
+  font-size: 46px;
+  font-weight: 300;
+}
+.pricing .card__column-left .card__price--green {
+  color: #55DFB4;
   font-size: 46px;
   font-weight: 300;
 }
@@ -325,4 +341,19 @@ button {
   border: none;
   border-radius: 23px;
   background: #07ACE6;
+}
+.pricing .card__button--green {
+  position: absolute;
+  display: block;
+  bottom: -10%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  transform: translateX(-50%);
+  color: #FFF;
+  font-size: 13px;
+  font-size: 13px;
+  border: none;
+  border-radius: 23px;
+  background: #55DFB4;
 }/*# sourceMappingURL=style.css.map */

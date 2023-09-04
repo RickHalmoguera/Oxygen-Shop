@@ -259,14 +259,13 @@ button{
       font-size: 36px;
       font-weight: 400;
    }
-
-
    
    &__card{
-      margin-top: 4em;
+      margin: 4em auto;
       border-radius: 18px;
       border: 1px solid #FB3B64;
       min-height: 277px;
+      max-width: 350px;
       position: relative;
       padding: 2em;
    }
@@ -276,6 +275,17 @@ button{
       border-radius: 18px;
       border: 1px solid #07ACE6;
       min-height: 277px;
+      position: relative;
+      padding: 2em;
+      box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
+   }
+
+   &__card--green{
+      margin: 4em auto;
+      border-radius: 18px;
+      border: 1px solid #55DFB4;
+      min-height: 277px;
+      max-width: 350px;
       position: relative;
       padding: 2em;
    }
@@ -302,6 +312,14 @@ button{
          font-size: 46px;
          font-weight: 300;
       }
+
+      .card__price--green{
+         color: #55DFB4;
+         font-size: 46px;
+         font-weight: 300;
+      }
+
+
 
       .card__offer{
          color: #13253B;
@@ -374,6 +392,21 @@ button{
       border: none;
       border-radius: 23px;
       background: #07ACE6; 
+   }
 
+   .card__button--green{
+      position: absolute;
+      display: block;
+      bottom: -10%;
+      left: 50%;
+      width: 150px;
+      height: 50px;
+      transform: translateX(-50%);
+      color: #FFF;
+      font-size: 13px;
+      font-size: 13px;
+      border: none;
+      border-radius: 23px;
+      background: #55DFB4; 
    }
 }
