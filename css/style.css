@@ -66,6 +66,7 @@ button {
 
 /*----------------------HERO STYLES---------------*/
 .hero {
+  background: #FFF;
   padding: 3em 0 1em 0;
   text-align: center;
 }
@@ -152,7 +153,7 @@ button {
   background: #FFF;
   border-radius: 5px;
   border: 1px solid #E8E9ED;
-  margin: 2em auto;
+  margin: 2em auto 0 auto;
 }
 
 .article__icon {
@@ -190,12 +191,13 @@ button {
 }
 
 .article__icon--full {
+  margin-top: -10px;
   position: relative;
 }
 .article__icon--full .icon__bg--full {
+  border-radius: 5px;
+  border: 1px solid #E8E9ED;
   height: 195px;
-  position: absolute;
-  left: 0;
   width: 100%;
 }
 .article__icon--full .icon__img--full {
@@ -213,4 +215,114 @@ button {
   margin: 1rem 0;
   font-size: 14px;
   font-weight: 400;
+}
+
+/*-----------------PRICING STYLES-------------*/
+.pricing {
+  padding: 1em;
+  text-align: center;
+}
+.pricing__heading {
+  font-size: 36px;
+  font-weight: 400;
+}
+.pricing__card {
+  margin-top: 4em;
+  border-radius: 18px;
+  border: 1px solid #FB3B64;
+  min-height: 277px;
+  position: relative;
+  padding: 2em;
+}
+.pricing__card--blue {
+  margin-top: 4em;
+  border-radius: 18px;
+  border: 1px solid #07ACE6;
+  min-height: 277px;
+  position: relative;
+  padding: 2em;
+}
+.pricing .card__column-left {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1em;
+}
+.pricing .card__column-left .card__name {
+  color: #13253B;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pricing .card__column-left .card__price {
+  color: #FB3B64;
+  font-size: 46px;
+  font-weight: 300;
+}
+.pricing .card__column-left .card__price--blue {
+  color: #07ACE6;
+  font-size: 46px;
+  font-weight: 300;
+}
+.pricing .card__column-left .card__offer {
+  color: #13253B;
+  font-size: 12px;
+  font-weight: 700;
+}
+.pricing .card__column-right {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+}
+.pricing .card__column-right .checkbox--green {
+  display: inline-block;
+}
+.pricing .card__column-right .checkbox--red {
+  display: inline-block;
+  width: 11px;
+  position: relative;
+}
+.pricing .card__column-right .checkbox__border--red {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+.pricing .card__column-right .checkbox__x--red {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+.pricing .card__column-right .checkbox__text {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
+.pricing .card__button--red {
+  position: absolute;
+  display: block;
+  bottom: -10%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  transform: translateX(-50%);
+  color: #FFF;
+  font-size: 13px;
+  font-size: 13px;
+  border: none;
+  border-radius: 23px;
+  background: #EB476E;
+}
+.pricing .card__button--blue {
+  position: absolute;
+  display: block;
+  bottom: -10%;
+  left: 50%;
+  width: 150px;
+  height: 50px;
+  transform: translateX(-50%);
+  color: #FFF;
+  font-size: 13px;
+  font-size: 13px;
+  border: none;
+  border-radius: 23px;
+  background: #07ACE6;
 }/*# sourceMappingURL=style.css.map */
