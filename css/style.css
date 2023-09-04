@@ -22,7 +22,6 @@ body {
   padding: 1.5em 3em;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
 }
-
 .header__logo {
   display: inline-block;
   color: #08A6E4;
@@ -30,11 +29,10 @@ body {
   font-size: 32px;
   font-weight: 300;
 }
-
 .header__hamburger {
   display: inline-block;
   position: absolute;
-  top: 2em;
+  top: 2.5em;
   right: 3em;
   transform: translate(0, -50%);
 }
@@ -53,4 +51,50 @@ body {
   letter-spacing: 3.28px;
   text-transform: uppercase;
   margin-bottom: 1em;
+}
+
+/*----------------------HERO STYLES---------------*/
+.hero {
+  padding: 3em 0 1em 0;
+  text-align: center;
+}
+.hero__heading {
+  margin: 0 auto 2rem auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  font-weight: 400;
+}
+.hero__text {
+  margin: 0 auto 2rem auto;
+  max-width: 300px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+}
+.hero__button {
+  margin: 0 auto 2rem auto;
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  display: block;
+  min-width: 307px;
+  max-width: 440px;
+  height: 67px;
+  border: none;
+  border-radius: 40px;
+  background: #08A6E4;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+}
+.hero__img-container {
+  overflow-x: hidden;
+  min-height: 267px;
+  position: relative;
+}
+.hero__img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }/*# sourceMappingURL=style.css.map */
