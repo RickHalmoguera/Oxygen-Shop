@@ -37,7 +37,7 @@ button{
 /*------------------------HEADER STYLES----------------*/
 
 .header{
-    z-index: 100000;
+   z-index: 100000;
    position: fixed;
    width: 100%;
    top: 0;
@@ -95,7 +95,6 @@ button{
    &__p{
       margin: 0 auto 2rem auto;
       max-width: 300px;
-      font-family: Open Sans;
       font-size: 16px;
       font-weight: 400;
    }
