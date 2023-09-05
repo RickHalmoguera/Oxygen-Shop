@@ -37,7 +37,11 @@ button{
 /*------------------------HEADER STYLES----------------*/
 
 .header{
-   position: relative;
+    z-index: 100000;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   background-color: #FFF;
    padding: 1.5em 3em;
    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
    
@@ -59,6 +63,7 @@ button{
 /*--------------------MENU STYLES---------------*/
 
 .header__menu--mobile{
+   position: relative;
    margin-top: 1em;
    list-style-type: none;
 }
@@ -76,6 +81,7 @@ button{
 /*----------------------HERO STYLES---------------*/
 
 .hero{
+   margin-top: 5em;
    background: #FFF;
    padding: 3em 0 1em 0;
    text-align: center;
