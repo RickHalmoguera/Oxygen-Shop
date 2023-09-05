@@ -41,14 +41,14 @@ button{
    padding: 1.5em 3em;
    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
    
-   &__logo{
+   &__h2{
       display: inline-block;
       color: #08A6E4;
       font-size: 32px;
       font-weight: 300;
    }
    
-   &__hamburger{
+   &__img{
       display: inline-block;
       position: absolute;
       top: 2.5em;
@@ -60,12 +60,12 @@ button{
 
 /*--------------------MENU STYLES---------------*/
 
-.menu__mobile{
+.header__menu--mobile{
    margin-top: 1em;
    list-style-type: none;
 }
 
-.menu__menu-item{
+.menu__li{
    color: #A5A5A5;
    font-family: Open Sans;
    font-size: 11px;
@@ -82,13 +82,13 @@ button{
    padding: 3em 0 1em 0;
    text-align: center;
    
-   &__heading{
+   &__h1{
       margin: 0 auto 2rem auto;
       font-size: 35px;
       font-weight: 400;
    }
    
-   &__text{
+   &__p{
       margin: 0 auto 2rem auto;
       max-width: 300px;
       font-family: Open Sans;
@@ -116,6 +116,7 @@ button{
       min-height: 267px;
       position: relative;
    }
+   
    &__img{
       width: auto;
       height: 100%; 
@@ -124,7 +125,7 @@ button{
       transform: translateX(-50%); 
    }
 
-   &__subheading{
+   &__h2{
       margin: 0 auto 2rem auto;
       font-size: 36px;
       font-weight: 400;
@@ -138,7 +139,7 @@ button{
    position: relative;
    height: 62px;
 
-   &__bg{
+   &__img--bg{
       position: absolute;
       left: 50%; 
       transform: translateX(-50%); 
@@ -150,14 +151,14 @@ button{
       transform: translateY(-50%);   
    }
 
-   &__numbers{
+   &__span--numbers{
       display: block;
       font-size: 20px;
       font-weight: 800;
    }
 
 
-   &__text{
+   &__span--text{
       color: #A5A5A5;
       display: block;
       font-size: 17px;
@@ -169,61 +170,66 @@ button{
 
 .benefits{
    padding: 0 2em;
-}
+   margin: 2em auto;
 
-.benefits__article{
-   position: relative;
-   padding: 1em;
-   background: #FFF;
-   border-radius: 5px;
-   border: 1px solid #E8E9ED;
-   margin: 2em auto 0 auto;
-}
-
-.article__icon{
-   margin: 2rem auto;
-   position: relative;
-   height: 134px;
-
-   .icon__bg{
-      position: absolute;
-      height: 100%;
-      left: 50%;
-      top: -30%;
-      transform: translateX(0%); 
-   }
-
-   .icon__img{
-      position: absolute;
-      height: 100%;
-      left: 50%; 
-      top: 0;
-      transform: translateX(-50%); 
-   }
-
-   .icon__bg--alt{
-      position: absolute;
-      height: 100%;
-      left: 50%; 
-      top: 0;
-      transform: translateX(-50%); 
-   }
-
-   .icon__img--alt{
-      position: absolute;
-      height: 100%;
-      left: 50%; 
-      top: 10%;
-      transform: translateX(-40%); 
+   &__article{
+      position: relative;
+      padding: 1em;
+      background: #FFF;
+      border-radius: 5px;
+      border: 1px solid #E8E9ED;
+      margin: 2em auto 0 auto;
    }
 }
+
+.article{
+   
+   .icon{
+      margin: 2rem auto;
+      position: relative;
+      height: 134px;
+   
+      &__img--bg{
+         position: absolute;
+         height: 100%;
+         left: 50%;
+         top: -30%;
+         transform: translateX(0%); 
+      }
+   
+      &__img{
+         position: absolute;
+         height: 100%;
+         left: 50%; 
+         top: 0;
+         transform: translateX(-50%); 
+      }
+   
+      &__img--bgalt{
+         position: absolute;
+         height: 100%;
+         left: 50%; 
+         top: 0;
+         transform: translateX(-50%); 
+      }
+   
+      &__img--alt{
+         position: absolute;
+         height: 100%;
+         left: 50%; 
+         top: 10%;
+         transform: translateX(-40%); 
+      }
+   }
+
+}
+
 
 .article__icon--full{
-   margin-top: -10px;
-   position: relative;
    
-   
-   .icon__bg--full{
+   .icon__img--bgfull{
+      margin-top: -1rem;
+      position: relative;
       border-radius: 5px;
       border: 1px solid #E8E9ED;
       height: 195px;
@@ -234,16 +240,15 @@ button{
       position: absolute;
       left: 50%;
       transform: translate(-50%, 10%);
-      
    }
 }
 
-.article__heading{
+.article__h3{
    font-size: 30px;
    font-weight: 400;
 }
 
-.article__text{
+.article__p{
    margin: 1rem 0;
    font-size: 14px;
    font-weight: 400;
@@ -252,16 +257,17 @@ button{
 /*-----------------PRICING STYLES-------------*/
 
 .pricing{
+ 
    padding: 1em;
    text-align: center;
 
-   &__heading{
+   &__h2{
       font-size: 36px;
       font-weight: 400;
    }
    
    &__card{
-      margin: 4em auto;
+      margin: 1em auto;
       border-radius: 18px;
       border: 1px solid #FB3B64;
       min-height: 277px;
@@ -271,10 +277,11 @@ button{
    }
 
    &__card--blue{
-      margin-top: 4em;
+      margin: 4em auto;
       border-radius: 18px;
       border: 1px solid #07ACE6;
       min-height: 277px;
+      max-width: 405px;
       position: relative;
       padding: 2em;
       box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.29);
@@ -290,38 +297,36 @@ button{
       padding: 2em; 
    }
 
-   .card__column-left{
+   .column-left{
       display: inline-block;
       vertical-align: middle;
       width: 40%;
 
-      .card__name{
+      &__h3{
          color: #13253B;
          font-size: 20px;
          font-weight: 700;
       }
 
-      .card__price{
+      &__p{
          color: #FB3B64;
          font-size: 46px;
          font-weight: 300;
       }
 
-      .card__price--blue{
+      &__p--blue{
          color: #07ACE6;
          font-size: 46px;
          font-weight: 300;
       }
 
-      .card__price--green{
+      &__p--green{
          color: #55DFB4;
          font-size: 46px;
          font-weight: 300;
       }
 
-
-
-      .card__offer{
+      &__span{
          color: #13253B;
          font-size: 12px;
          font-weight: 700;
@@ -334,30 +339,30 @@ button{
       vertical-align: middle;
       text-align: left;
       
-      .checkbox--green{
+      .item__img--green{
          display: inline-block;
       }
 
-      .checkbox--red{
+      .item__checkbox--red{
          display: inline-block;
          width: 11px;
          position: relative;
       }
 
-      .checkbox__border--red{
+      .checkbox__img--border{
          position: absolute;
          top: 0%;
          left: 50%;
          transform: translate(-50%, -100%);
       }
 
-      .checkbox__x--red{
+      .checkbox__img--x{
          position: absolute;
          top: 50%;
          left: 50%;
          transform: translate(-50%, -150%);
       }
-      .checkbox__text{
+      .item__p{
          display: inline-block;
          margin: .5rem;
          font-size: 14px;
