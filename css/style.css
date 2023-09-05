@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Raleway:wght@300;400;700;800&display=swap");
 /*---------------------VARIABLES------------*/
 /*---------------------GLOBAL STYLES---------*/
@@ -35,13 +36,11 @@ button {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.29);
 }
 .header__h2 {
-  display: inline-block;
   color: #08A6E4;
   font-size: 32px;
   font-weight: 300;
 }
 .header__img {
-  display: inline-block;
   position: absolute;
   top: 2.5em;
   right: 3em;
@@ -217,6 +216,7 @@ button {
 
 /*-----------------PRICING STYLES-------------*/
 .pricing {
+  background-color: #FFF;
   padding: 1em;
   text-align: center;
 }
@@ -356,4 +356,202 @@ button {
   border: none;
   border-radius: 23px;
   background: #55DFB4;
+}
+
+/*-----------------QUESTIONS STYLES-------------*/
+.contact {
+  background-color: #FFF;
+}
+.contact .questions {
+  padding: 2em;
+  max-width: 405px;
+  margin: 0 auto;
+}
+.contact .questions__h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.contact .questions__p {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+.contact .questions .item {
+  margin-bottom: 0.5em;
+}
+.contact .questions .item__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.contact .questions .item__span {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.5em;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 400;
+}
+.contact .questions .form {
+  margin-top: 2em;
+  max-width: 405px;
+}
+.contact .questions .form__label {
+  display: block;
+  color: #08A6E4;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3.28px;
+  text-transform: uppercase;
+}
+.contact .questions .form__input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid #95989A;
+  border-radius: 0;
+  width: 100%;
+  padding-top: 1rem;
+  height: 2rem;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 2em;
+}
+.contact .questions .form__input:focus {
+  outline: none;
+  border-bottom: 2px solid #13253B;
+}
+.contact .questions .form__column-left {
+  display: inline-block;
+  vertical-align: top;
+}
+.contact .questions .form__column-right {
+  display: inline-block;
+  width: 80%;
+  margin-left: 0.5rem;
+  color: #707070;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 3em;
+}
+.contact .questions .form__button {
+  display: block;
+  width: 226px;
+  height: 57px;
+  border-radius: 35px;
+  margin-left: auto;
+  background: #08A6E4;
+  border: none;
+  box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.29);
+  color: #FFF;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/*--------------------FOOTER STYLES------------*/
+.footer {
+  background-color: #FFF;
+  position: relative;
+  padding: 1.5em 3em;
+  background: #F7F7F7;
+  box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.2);
+}
+.footer__h2 {
+  color: #08A6E4;
+  font-size: 26px;
+  font-weight: 300;
+}
+.footer__p {
+  color: #A5A5A5;
+  font-size: 11px;
+  font-weight: 400;
+}
+.footer .social {
+  position: absolute;
+  top: 50%;
+  right: 3em;
+  transform: translate(0, -50%);
+}
+.footer .social__img {
+  margin-left: 1em;
+}
+
+/*--------------------CHECKBOX STYLES----------*/
+/* Base for label styling */
+[type=checkbox]:not(:checked),
+[type=checkbox]:checked {
+  position: absolute;
+  left: -9999px;
+}
+
+[type=checkbox]:not(:checked) + label,
+[type=checkbox]:checked + label {
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  margin-bottom: 4px;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* checkbox aspect */
+[type=checkbox]:not(:checked) + label:before,
+[type=checkbox]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: -10px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #95989A;
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* checked mark aspect */
+[type=checkbox]:not(:checked) + label:after,
+[type=checkbox]:checked + label:after {
+  content: "✔";
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #08A6E4;
+  transition: all 0.2s;
+}
+
+/* checked mark aspect changes */
+[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[type=checkbox]:checked + label:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* disabled checkbox */
+[type=checkbox]:disabled:not(:checked) + label:before,
+[type=checkbox]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #999999;
+  background-color: #dddddd;
+}
+
+[type=checkbox]:disabled:checked + label:after {
+  color: #999999;
+}
+
+[type=checkbox]:disabled + label {
+  color: #aaaaaa;
+}
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #4778d9 !important;
+  background: #ffffff;
 }/*# sourceMappingURL=style.css.map */
