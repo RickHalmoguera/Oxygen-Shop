@@ -88,7 +88,7 @@ p,li,button{
       display: inline-block;
       text-align: center;
       vertical-align: middle;
-      
+
       .card__h3{
          color: $--darkBlue-color;
          font-size: 20px;
@@ -402,7 +402,7 @@ p,li,button{
 
    .card--green{
       @include pricing_card;
-      max-width: 339px;
+      
       border: 1px solid $--green-color;
       
    
@@ -418,10 +418,20 @@ p,li,button{
        }
    }
 
-
 }
 
+/*-----------CONTACT STYLES--------*/
 
+   .contact{
 
+      &__h2{
+         font-size: 40px;
+         font-weight: 400;
+      }
 
+      &__p{
+         font-size: 16px;
+         font-weight: 400;
+      }
+   }
 

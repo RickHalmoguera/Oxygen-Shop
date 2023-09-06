@@ -413,7 +413,6 @@ p, li, button {
   padding: 2em 1em 3em 1em;
   border-radius: 18px;
   position: relative;
-  max-width: 339px;
   border: 1px solid #55DFB4;
 }
 .pricing .card--green .card__column--left {
@@ -488,4 +487,14 @@ p, li, button {
 .pricing .card--green .card__button {
   width: 150px;
   background-color: #55DFB4;
+}
+
+/*-----------CONTACT STYLES--------*/
+.contact__h2 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.contact__p {
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
