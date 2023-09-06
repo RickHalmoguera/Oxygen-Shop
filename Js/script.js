@@ -1,11 +1,24 @@
 const menuBtn = document.getElementById("menuBtn")
-const menuMobile = document.getElementById("menuMobile")
-const handleMenu = () =>{
+const navUl = document.getElementById("navUl")
 
-    if(menuMobile.classList.contains("hidden")){
-        menuMobile.classList.remove("hidden")
+const xSrc = "../assets/Frame 14.svg"
+const menuSrc ="../assets/Menu.svg"
+
+let isOpen = false
+
+/* Checks if the Menu is already open, if its not open, displays de menu links and change the Menu img to the "X" img 
+if its open, hides the menu links and changes the Menu img to the Hamburger*/
+
+const handleMenu = () =>{
+    console.log("hola")
+    if(isOpen){
+        menuBtn.src = menuSrc
+        isOpen = false
+        navUl.style.display ="none"
     }else{
-        menuMobile.classList.add("hidden")
+        menuBtn.src = xSrc
+        isOpen = true
+        navUl.style.display ="block"
     }
 }
 
