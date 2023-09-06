@@ -490,6 +490,10 @@ p, li, button {
 }
 
 /*-----------CONTACT STYLES--------*/
+.contact {
+  background-color: #FFF;
+  padding: 4em 1em;
+}
 .contact__h2 {
   font-size: 40px;
   font-weight: 400;
@@ -497,4 +501,17 @@ p, li, button {
 .contact__p {
   font-size: 16px;
   font-weight: 400;
+  margin-bottom: 2em;
+}
+.contact__row {
+  margin-bottom: 0.5em;
+}
+.contact__img {
+  vertical-align: middle;
+}
+.contact__p--grey {
+  display: inline-block;
+  color: #A5A5A5;
+  font-size: 16px;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
