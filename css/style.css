@@ -100,7 +100,7 @@ p, li, button {
   transform: translateX(-50%);
 }
 .hero__h2 {
-  margin: 0 auto;
+  margin: 1em auto;
   font-size: 36px;
   font-weight: 400;
   max-width: 383px;
@@ -130,4 +130,103 @@ p, li, button {
   font-family: Raleway;
   font-size: 17px;
   font-weight: 400;
+}
+
+/*-----------BENEFITS STYLES--------*/
+.benefits {
+  background-color: #F7F7F7;
+  padding: 4em 2em;
+}
+.benefits .card {
+  display: block;
+  padding: 2em 1em;
+  border-radius: 5px;
+  border: 1px solid #E8E9ED;
+  background-color: #FFF;
+  max-width: 315px;
+  margin: 2em auto;
+  position: relative;
+  margin: 2em auto;
+}
+.benefits .card__h3 {
+  max-width: 225px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.benefits .card__p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.benefits .card .card__icon {
+  margin-bottom: 2em;
+}
+.benefits .card .card__icon .card__img--bg {
+  position: absolute;
+  width: 127px;
+  top: 0%;
+  left: 50%;
+  z-index: 0;
+}
+.benefits .card .card__icon .card__img {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 192px;
+  z-index: 1;
+}
+.benefits .card .card__icon .card__img--bgAlt {
+  display: block;
+  margin: 0 auto;
+  width: 131px;
+}
+.benefits .card .card__icon .card__imgAlt {
+  width: 175px;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+.benefits .card .card__icon .card__img--bgFull {
+  max-width: 315px;
+}
+.benefits .card--Alt {
+  display: block;
+  padding: 2em 1em;
+  border-radius: 5px;
+  border: 1px solid #E8E9ED;
+  background-color: #FFF;
+  max-width: 315px;
+  margin: 2em auto;
+  position: relative;
+  margin: 2em auto 0 auto;
+}
+.benefits .card--Alt__h3 {
+  max-width: 225px;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.benefits .card--Alt__p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.benefits .card__icon {
+  max-width: 315px;
+  display: block;
+  margin: -10px auto;
+  position: relative;
+}
+.benefits .card__icon .card__img--bgFull {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-height: 195px;
+  z-index: 0;
+}
+.benefits .card__icon .card__imgFull {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }/*# sourceMappingURL=style.css.map */

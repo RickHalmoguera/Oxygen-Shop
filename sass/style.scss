@@ -16,6 +16,8 @@ $--green-color:#55DFB4;
 $--black-color: #000;
 $--darkBlue-color:#13253B;
 $--grey-color:#A5A5A5;
+$--greyLight-color:#F7F7F7;
+$--greyBorder-color:#E8E9ED;
 
 $--white-color: #FFF;
 
@@ -51,8 +53,27 @@ p,li,button{
    font-weight: 700;
 }
 
+@mixin card{
+   display: block;
+   padding: 2em 1em;
+   border-radius: 5px;
+   border: 1px solid $--greyBorder-color;
+   background-color: $--white-color;
+   max-width: 315px;margin: 2em auto;
+   position: relative;
 
+   &__h3{
+      max-width: 225px;
+      font-size: 30px;
+      font-weight: 400;
+      margin-bottom: 1em;
+   }
 
+   &__p{
+      font-size: 14px;
+      font-weight: 400;
+   }
+}
 
 
 /*--------------NAV STYLES--------------*/
@@ -140,7 +161,7 @@ p,li,button{
    }
 
    &__h2{
-      margin: 0 auto;
+      margin: 1em auto;
       font-size: 36px;
       font-weight: 400;
       max-width: 383px;
@@ -176,9 +197,89 @@ p,li,button{
       font-weight: 400;
    }
 
-
-
 }
+
+/*-----------BENEFITS STYLES--------*/
+
+.benefits{
+   background-color: $--greyLight-color;
+   padding:4em 2em;
+
+   .card{
+      @include card;
+      margin: 2em auto;
+      
+      .card__icon{
+         margin-bottom: 2em;
+         .card__img--bg{
+            position: absolute;
+            width: 127px;
+            top: 0%;
+            left: 50%;
+            z-index: 0;
+         }
+         
+         .card__img{
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 192px;
+            z-index: 1;
+         }         
+
+         .card__img--bgAlt{
+            display: block;
+            margin: 0 auto;
+            width: 131px; 
+         }
+
+         .card__imgAlt{
+            width: 175px;
+            position: absolute;
+            top: 10%;
+            left: 30%;
+         }
+         .card__img--bgFull{
+            max-width: 315px;
+         }
+      
+      }
+      
+     
+   }
+
+   .card--Alt{
+      @include card;
+      margin: 2em auto 0 auto;
+   }
+
+   .card__icon{
+      max-width: 315px;
+      display: block;
+      margin: -10px auto;
+      position: relative;
+      
+      .card__img--bgFull{
+         position: relative;
+         z-index: 2;
+         width: 100%;
+         max-height: 195px;
+         z-index: 0;
+      }
+
+      .card__imgFull{
+         
+         position: absolute;
+         top: 65%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         z-index: 1;
+      }
+   }
+   
+      
+}
+
 
 
 
