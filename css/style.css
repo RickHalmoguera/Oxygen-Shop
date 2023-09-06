@@ -282,7 +282,8 @@ p, li, button {
 .pricing .card .card__column--right .card__item {
   margin-bottom: 1rem;
 }
-.pricing .card .card__column--right .card__item .card__span {
+.pricing .card .card__column--right .card__item .card__p {
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   margin-left: 0.5em;
@@ -361,7 +362,8 @@ p, li, button {
 .pricing .card--blue .card__column--right .card__item {
   margin-bottom: 1rem;
 }
-.pricing .card--blue .card__column--right .card__item .card__span {
+.pricing .card--blue .card__column--right .card__item .card__p {
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   margin-left: 0.5em;
@@ -443,7 +445,8 @@ p, li, button {
 .pricing .card--green .card__column--right .card__item {
   margin-bottom: 1rem;
 }
-.pricing .card--green .card__column--right .card__item .card__span {
+.pricing .card--green .card__column--right .card__item .card__p {
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
   margin-left: 0.5em;

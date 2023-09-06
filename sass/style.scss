@@ -88,6 +88,7 @@ p,li,button{
       display: inline-block;
       text-align: center;
       vertical-align: middle;
+      
       .card__h3{
          color: $--darkBlue-color;
          font-size: 20px;
@@ -115,7 +116,8 @@ p,li,button{
       .card__item{
          margin-bottom: 1rem;
 
-         .card__span{
+         .card__p{
+            display: inline-block;
             font-size: 14px;
             font-weight: 400;
             margin-left: .5em;
