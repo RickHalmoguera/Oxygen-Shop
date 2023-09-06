@@ -43,6 +43,7 @@ p,li,button{
    font-family: $--sec-font;
 }
 /*--------------MIXINS-------------------*/
+
 @mixin button{
    width: 308px;
    height: 57px;
@@ -72,6 +73,85 @@ p,li,button{
    &__p{
       font-size: 14px;
       font-weight: 400;
+   }
+}
+
+@mixin pricing_card{
+   margin: 0 auto 3em auto;
+   max-width: 293px;
+   padding: 2em 1em 3em 1em;
+   border-radius: 18px;
+   position: relative;
+
+   .card__column--left{
+      width: 40%;
+      display: inline-block;
+      text-align: center;
+      vertical-align: middle;
+      .card__h3{
+         color: $--darkBlue-color;
+         font-size: 20px;
+         font-weight: 700;
+      }
+
+      .card__p{
+         color: $--red-color;
+         font-size: 46px;
+         font-weight: 300;
+      }
+
+      .card__span{
+         color: $--darkBlue-color;
+         font-size: 12px;
+         font-weight: 700;
+      }
+   }
+
+   .card__column--right{
+      display: inline-block;
+      vertical-align: middle;
+      width: auto;
+      
+      .card__item{
+         margin-bottom: 1rem;
+
+         .card__span{
+            font-size: 14px;
+            font-weight: 400;
+            margin-left: .5em;
+         }
+
+      }
+
+      .card__checkbox--red{
+         display: inline-block;
+         width: 11px;
+         position: relative;
+         
+         .card__border--red{
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-35%,-85%)
+         }
+
+         .card__check--red{
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translate(-25%,-110%)
+         }
+      }
+
+   }
+
+   .card__button{
+      @include button;
+      position: absolute;
+      width: 150px;
+      left: 50%;
+      bottom: -25%;
+      transform: translate(-50%,-50%);
    }
 }
 
@@ -151,7 +231,6 @@ p,li,button{
       overflow-x: hidden;
       position: relative;
    }
-   
 
    &__img{
       max-width: 1775px;
@@ -196,14 +275,13 @@ p,li,button{
       font-size: 17px;
       font-weight: 400;
    }
-
 }
 
 /*-----------BENEFITS STYLES--------*/
 
 .benefits{
    background-color: $--greyLight-color;
-   padding:4em 2em;
+   padding:4em 1em;
 
    .card{
       @include card;
@@ -239,13 +317,11 @@ p,li,button{
             top: 10%;
             left: 30%;
          }
+
          .card__img--bgFull{
             max-width: 315px;
          }
-      
       }
-      
-     
    }
 
    .card--Alt{
@@ -271,7 +347,6 @@ p,li,button{
       }
 
       .card__imgFull{
-         
          position: absolute;
          top: 65%;
          left: 50%;
@@ -281,7 +356,68 @@ p,li,button{
    }  
 }
 
+/*-----------PRICING STYLES--------*/
 
+.pricing{
+   background-color: $--white-color;
+   padding:4em 1em;
+
+   &__h2{
+      text-align: center;
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 1em;
+   }
+
+   .card{
+      @include pricing_card;
+      border: 1px solid $--red-color;
+   
+      .card__button{
+        background-color: $--red-color;
+        width: 150px;
+      }
+   }
+
+   .card--blue{
+      @include pricing_card;
+      max-width: 339px;
+      border: 1px solid $--blue-color;
+      box-shadow: 5px 10px 27px 0px $--blueShadow-color;
+   
+      .card__column--left{
+         .card__p{
+            color: $--blue-color;
+         }
+      }
+
+      .card__button{
+         width: 150px;
+         background-color: $--blue-color;
+         box-shadow: 5px 10px 27px 0px $--blueShadow-color;
+       }
+   }
+
+   .card--green{
+      @include pricing_card;
+      max-width: 339px;
+      border: 1px solid $--green-color;
+      
+   
+      .card__column--left{
+         .card__p{
+            color: $--green-color;
+         }
+      }
+
+      .card__button{
+         width: 150px;
+         background-color: $--green-color;
+       }
+   }
+
+
+}
 
 
 

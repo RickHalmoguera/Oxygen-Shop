@@ -135,7 +135,7 @@ p, li, button {
 /*-----------BENEFITS STYLES--------*/
 .benefits {
   background-color: #F7F7F7;
-  padding: 4em 2em;
+  padding: 4em 1em;
 }
 .benefits .card {
   display: block;
@@ -232,4 +232,257 @@ p, li, button {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+}
+
+/*-----------PRICING STYLES--------*/
+.pricing {
+  background-color: #FFF;
+  padding: 4em 1em;
+}
+.pricing__h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+.pricing .card {
+  margin: 0 auto 3em auto;
+  max-width: 293px;
+  padding: 2em 1em 3em 1em;
+  border-radius: 18px;
+  position: relative;
+  border: 1px solid #EB476E;
+}
+.pricing .card .card__column--left {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.pricing .card .card__column--left .card__h3 {
+  color: #13253B;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pricing .card .card__column--left .card__p {
+  color: #EB476E;
+  font-size: 46px;
+  font-weight: 300;
+}
+.pricing .card .card__column--left .card__span {
+  color: #13253B;
+  font-size: 12px;
+  font-weight: 700;
+}
+.pricing .card .card__column--right {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+.pricing .card .card__column--right .card__item {
+  margin-bottom: 1rem;
+}
+.pricing .card .card__column--right .card__item .card__span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 0.5em;
+}
+.pricing .card .card__column--right .card__checkbox--red {
+  display: inline-block;
+  width: 11px;
+  position: relative;
+}
+.pricing .card .card__column--right .card__checkbox--red .card__border--red {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-35%, -85%);
+}
+.pricing .card .card__column--right .card__checkbox--red .card__check--red {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-25%, -110%);
+}
+.pricing .card .card__button {
+  width: 308px;
+  height: 57px;
+  border: none;
+  border-radius: 40px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  bottom: -25%;
+  transform: translate(-50%, -50%);
+}
+.pricing .card .card__button {
+  background-color: #EB476E;
+  width: 150px;
+}
+.pricing .card--blue {
+  margin: 0 auto 3em auto;
+  max-width: 293px;
+  padding: 2em 1em 3em 1em;
+  border-radius: 18px;
+  position: relative;
+  max-width: 339px;
+  border: 1px solid #08A6E4;
+  box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
+}
+.pricing .card--blue .card__column--left {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.pricing .card--blue .card__column--left .card__h3 {
+  color: #13253B;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pricing .card--blue .card__column--left .card__p {
+  color: #EB476E;
+  font-size: 46px;
+  font-weight: 300;
+}
+.pricing .card--blue .card__column--left .card__span {
+  color: #13253B;
+  font-size: 12px;
+  font-weight: 700;
+}
+.pricing .card--blue .card__column--right {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+.pricing .card--blue .card__column--right .card__item {
+  margin-bottom: 1rem;
+}
+.pricing .card--blue .card__column--right .card__item .card__span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 0.5em;
+}
+.pricing .card--blue .card__column--right .card__checkbox--red {
+  display: inline-block;
+  width: 11px;
+  position: relative;
+}
+.pricing .card--blue .card__column--right .card__checkbox--red .card__border--red {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-35%, -85%);
+}
+.pricing .card--blue .card__column--right .card__checkbox--red .card__check--red {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-25%, -110%);
+}
+.pricing .card--blue .card__button {
+  width: 308px;
+  height: 57px;
+  border: none;
+  border-radius: 40px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  bottom: -25%;
+  transform: translate(-50%, -50%);
+}
+.pricing .card--blue .card__column--left .card__p {
+  color: #08A6E4;
+}
+.pricing .card--blue .card__button {
+  width: 150px;
+  background-color: #08A6E4;
+  box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
+}
+.pricing .card--green {
+  margin: 0 auto 3em auto;
+  max-width: 293px;
+  padding: 2em 1em 3em 1em;
+  border-radius: 18px;
+  position: relative;
+  max-width: 339px;
+  border: 1px solid #55DFB4;
+}
+.pricing .card--green .card__column--left {
+  width: 40%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+.pricing .card--green .card__column--left .card__h3 {
+  color: #13253B;
+  font-size: 20px;
+  font-weight: 700;
+}
+.pricing .card--green .card__column--left .card__p {
+  color: #EB476E;
+  font-size: 46px;
+  font-weight: 300;
+}
+.pricing .card--green .card__column--left .card__span {
+  color: #13253B;
+  font-size: 12px;
+  font-weight: 700;
+}
+.pricing .card--green .card__column--right {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+.pricing .card--green .card__column--right .card__item {
+  margin-bottom: 1rem;
+}
+.pricing .card--green .card__column--right .card__item .card__span {
+  font-size: 14px;
+  font-weight: 400;
+  margin-left: 0.5em;
+}
+.pricing .card--green .card__column--right .card__checkbox--red {
+  display: inline-block;
+  width: 11px;
+  position: relative;
+}
+.pricing .card--green .card__column--right .card__checkbox--red .card__border--red {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-35%, -85%);
+}
+.pricing .card--green .card__column--right .card__checkbox--red .card__check--red {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-25%, -110%);
+}
+.pricing .card--green .card__button {
+  width: 308px;
+  height: 57px;
+  border: none;
+  border-radius: 40px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  position: absolute;
+  width: 150px;
+  left: 50%;
+  bottom: -25%;
+  transform: translate(-50%, -50%);
+}
+.pricing .card--green .card__column--left .card__p {
+  color: #55DFB4;
+}
+.pricing .card--green .card__button {
+  width: 150px;
+  background-color: #55DFB4;
 }/*# sourceMappingURL=style.css.map */
