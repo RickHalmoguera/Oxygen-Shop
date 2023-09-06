@@ -222,6 +222,9 @@ p, li, button {
   width: 100%;
   max-height: 195px;
   z-index: 0;
+  border-radius: 5px;
+  border: 1px solid #E8E9ED;
+  background: #55DFB4;
 }
 .benefits .card__icon .card__imgFull {
   position: absolute;
