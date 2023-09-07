@@ -60,7 +60,7 @@ p,li,button,label,input{
 
 @mixin card{
    display: block;
-   padding: 2em 1em;
+   padding: 2em 2em;
    border-radius: 5px;
    border: 1px solid $--greyBorder-color;
    background-color: $--white-color;
@@ -205,6 +205,37 @@ p,li,button,label,input{
    }
 }
 
+@media only screen and (min-width: 1000px) {
+   .nav{
+      padding: 1em 4em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__img{
+         display: none;
+      }
+
+      &__ul{
+         margin-top: 0;
+         display: flex;
+         gap: 2em;
+      }
+
+      &__li{
+         border: 4px solid transparent;
+         
+      }
+      &__li:hover{
+         cursor: pointer;
+         color: $--black-color;
+         font-weight: 700;
+         height: 100%;
+         border-bottom: 4px solid $--blue-color;
+      }
+   }
+}
+
+
 /*-------------HERO STYLES---------*/
 
 .hero{
@@ -239,7 +270,6 @@ p,li,button,label,input{
    }
 
    &__img{
-      max-width: 1775px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -283,6 +313,29 @@ p,li,button,label,input{
    }
 }
 
+@media only screen and (min-width: 1000px) {
+   .hero{
+      &__img{
+         width: 100%;
+         max-width: 1735px;
+         position: static;
+         left: auto;
+         transform: none;
+      }
+
+      &__h2{
+         max-width: 100%;
+      }
+
+      &__flex{
+         display: flex; 
+         justify-content: center;
+         gap: 15em;
+      }
+
+   }
+}
+
 /*-----------BENEFITS STYLES--------*/
 
 .benefits{
@@ -293,12 +346,14 @@ p,li,button,label,input{
       @include card;
       margin: 2em auto;
       
-      .card__icon{
+      &__icon, &__icon--alt{
          margin-bottom: 2em;
+         position: relative;
+         
          .card__img--bg{
             position: absolute;
             width: 127px;
-            top: 0%;
+            top: -25%;
             left: 50%;
             z-index: 0;
          }
@@ -307,7 +362,7 @@ p,li,button,label,input{
             position: relative;
             display: block;
             margin: 0 auto;
-            width: 192px;
+            max-width: 192px;
             z-index: 1;
          }         
 
@@ -318,14 +373,10 @@ p,li,button,label,input{
          }
 
          .card__imgAlt{
-            width: 175px;
             position: absolute;
+            width: 175px;
             top: 10%;
             left: 30%;
-         }
-
-         .card__img--bgFull{
-            max-width: 315px;
          }
       }
    }
@@ -335,31 +386,150 @@ p,li,button,label,input{
       margin: 2em auto 0 auto;
    }
 
-   .card__icon{
-      max-width: 315px;
-      display: block;
-      margin: -10px auto;
-      position: relative;
-      
-      .card__img--bgFull{
+   .card__flex{
+      .card__icon{
+         margin: 0 auto;
+         max-width: 315px;
          position: relative;
-         z-index: 2;
-         width: 100%;
-         max-height: 195px;
-         z-index: 0;
-         border-radius: 5px;
-         border: 1px solid $--greyBorder-color;
-         background: $--green-color;
+         
+         .card__img--bgFull{
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-height: 195px;
+            z-index: 0;
+            border-radius: 5px;
+            border: 1px solid $--greyBorder-color;
+            background: $--green-color;
+         }
+   
+         .card__imgFull{
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+         }
+      }  
+
+   }
+}
+
+@media only screen and (min-width: 1000px) {
+
+   .benefits{
+
+      .card{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         width: 90%;
+         padding-top: 3em;
+         min-height:370px;
+         max-width: 1124px;
+
+         &__icon{
+            order: 2;
+            width: 100%;
+            max-width: 60%;
+
+            .card__img--bg{
+               width: 225px;
+            }
+
+            .card__img{
+               max-width: 386px;
+            }         
+   
+
+         }
+
+         &__text{
+            width: 40%;
+            order: 1;
+
+            .text__line{
+               width: 70%;
+               margin-top: 2em;
+               border: 2px solid $--red-color;
+            }
+         }
+
+         &__icon--alt{
+            width: 100%;
+            width: 50%;
+
+            .card__img--bgAlt{
+               border-radius: 320px;
+               background-color: $--blue-color;
+               width: 328px; 
+            }
+   
+            .card__imgAlt{
+               position: absolute;
+               width: 400px;
+               top: 10%;
+               left: 10%;
+               transform: translateX(10%);
+            }
+         }
+
+         &__text--alt{
+            width: 40%;
+            align-self: center;
+            order: 1;
+
+            .text__line{
+               width: 70%;
+               margin-top: 2em;
+               border: 2px solid $--blue-color;
+            }
+         }
+
       }
 
-      .card__imgFull{
-         position: absolute;
-         top: 65%;
-         left: 50%;
-         transform: translate(-50%,-50%);
-         z-index: 1;
+      .card__flex{
+         display: flex;
+         justify-content: space-between;
+         width: 90%;
+         gap: 3em;
+         max-width: 1124px;
+         margin: 2em auto;
+   
+         .card--Alt{
+            display: inline-block;
+            margin:0;
+            
+            padding-top: 3em;
+            min-height:370px;
+            max-width: 1124px;
+            
+            .text__line{
+               width: 70%;
+               margin-top: 2em;
+               border: 2px solid $--green-color;
+            }
+         }
+
+         .card__icon{
+            min-width: 440px;
+            margin: 0;
+            
+            .card__img--bgFull{
+               min-height: 100%;
+            }
+      
+            .card__imgFull{
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%,-50%);
+               z-index: 1;
+            }
+         }  
       }
-   }  
+   }
+
 }
 
 /*-----------PRICING STYLES--------*/
@@ -523,11 +693,6 @@ p,li,button,label,input{
       display: inline-block;
       right: 1em;
       top: 2.5em;
-   }
-
-   
-   &__social{
-      
    }
 
    &__img{

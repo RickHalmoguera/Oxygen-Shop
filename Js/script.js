@@ -10,7 +10,6 @@ let isOpen = false
 if its open, hides the menu links and changes the Menu img to the Hamburger*/
 
 const handleMenu = () =>{
-    console.log("hola")
     if(isOpen){
         menuBtn.src = menuSrc
         isOpen = false
