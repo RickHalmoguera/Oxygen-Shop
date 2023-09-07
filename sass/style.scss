@@ -15,13 +15,16 @@ $--green-color:#55DFB4;
 
 $--black-color: #000;
 $--darkBlue-color:#13253B;
+$--darkerGrey-color:#707070;
+$--darkGrey-color:#95989A;
 $--grey-color:#A5A5A5;
-$--greyLight-color:#F7F7F7;
 $--greyBorder-color:#E8E9ED;
 
 $--white-color: #FFF;
+$--otherWhite-color:#F7F7F7;
 
 $--topShadow-color:#0000004a;
+$--bottomSHadow-color:#00000033;
 $--blueShadow-color:#07ace64a;
 
 /*----------------GLOBAL STYLES---------*/
@@ -31,6 +34,7 @@ $--blueShadow-color:#07ace64a;
    margin: 0;
    padding: 0;
 }
+
 body {
    min-width: 320px;
 }
@@ -39,7 +43,7 @@ h1,h2,h3,span{
    font-family: $--main-font;
 }
 
-p,li,button{
+p,li,button,label,input{
    font-family: $--sec-font;
 }
 /*--------------MIXINS-------------------*/
@@ -282,7 +286,7 @@ p,li,button{
 /*-----------BENEFITS STYLES--------*/
 
 .benefits{
-   background-color: $--greyLight-color;
+   background-color: $--otherWhite-color;
    padding:4em 1em;
 
    .card{
@@ -422,32 +426,208 @@ p,li,button{
 
 /*-----------CONTACT STYLES--------*/
 
-   .contact{
-      background-color: $--white-color;
-      padding:4em 1em;
+.contact{
+   background-color: $--white-color;
+   padding:4em 1em;
+   max-width: 339px;
+   margin: 0 auto;
 
-      &__h2{
-         font-size: 40px;
-         font-weight: 400;
-      }
-
-      &__p{
-         font-size: 16px;
-         font-weight: 400;
-         margin-bottom: 2em;
-      }
-
-      &__row{
-         margin-bottom: .5em;
-      }
-      &__img{
-         vertical-align: middle;
-      }
-      &__p--grey{
-         display: inline-block;
-         color: $--grey-color;
-         font-size: 16px;
-         font-weight: 600;
-      }
+   &__h2{
+      font-size: 40px;
+      font-weight: 400;
    }
+
+   &__p{
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 2em;
+   }
+
+   &__row{
+      margin-bottom: .5em;
+   }
+
+   &__img{
+      vertical-align: middle;
+   }
+
+   &__p--grey{
+      display: inline-block;
+      color: $--grey-color;
+      font-size: 16px;
+      font-weight: 600;         
+   }
+
+   &__label{
+      display: block;
+      color: $--blue-color;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 3.28px;
+      margin-top: 4em;
+   }
+
+   &__input{
+      border: none;
+      border-bottom: 1px solid $--darkGrey-color;
+      width: 100%;
+      height: 3em;
+      padding-top: 1.5em;
+   }
+
+   &__column--left{
+      display: inline-block;
+      margin-top: 2em;
+      vertical-align: top;
+      width: 10%;
+   }
+
+   &__column--right{
+      display: inline-block;
+      width: 85%;
+      margin: 2em 0;
+      text-align: justify
+   }
+
+   &__button{
+      display: block;
+      margin-left: auto;
+      @include button;
+      background-color: $--blue-color;
+      box-shadow: 5px 10px 14px 0px $--blueShadow-color;
+
+   }
+
+   &__p--darker{
+      color: $--darkerGrey-color;
+      font-size: 12px;
+      font-weight: 400;
+   }
+}
+
+.footer{
+   box-shadow: 0px -5px 40px 0px $--bottomSHadow-color;
+   padding: 2em 1em;
+   position: relative;
+
+   &__column-left{
+      display: inline-block;
+   }
+   &__column-left{
+      display: inline-block;
+   }
+   
+   &__column-right{
+      position: absolute;
+      display: inline-block;
+      right: 1em;
+      top: 2.5em;
+   }
+
+   
+   &__social{
+      
+   }
+
+   &__img{
+      margin-left: 1em;
+   }
+
+   &__h3{
+      color: $--blue-color;
+      font-size: 26px;
+      font-weight: 300;
+   }
+
+   &__p{
+      color: $--grey-color;
+      font-size: 11px;
+      font-weight: 400;
+   }
+}
+
+/*---------------CHECKBOX----------*/
+
+.b-contain *,
+.b-contain *::before,
+.b-contain *::after {
+  box-sizing: content-box !important;
+}
+
+.b-contain input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.b-contain {
+  display: table;
+  position: relative;
+  padding-left: 2rem;
+  cursor: pointer;
+  margin-bottom: 0.4rem;
+}
+
+.b-contain input[type="checkbox"] ~ .b-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.25rem;
+  width: 1.25rem;
+  background: #fff;
+  transition: background 250ms;
+  border: 1px solid #95989A;
+  border-radius: 0.2rem;
+}
+
+.b-contain input[type="checkbox"] ~ .b-input::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7px;
+  top: 3px;
+  width: 0.3rem;
+  height: 0.6rem;
+  border: solid #08A6E4;
+  border-width: 0 2px 2px 0;
+  transition: background 250ms;
+  transform: rotate(45deg);
+}
+
+.b-contain input[type="checkbox"]:disabled ~ .b-input::after {
+  border-color: #ffffff;
+}
+
+.b-contain input:checked ~ .b-input::after {
+  display: block;
+}
+
+.b-contain:hover input[type="checkbox"]:not([disabled]) ~ .b-input,
+.b-contain input[type="checkbox"]:focus ~ .b-input {
+  background: #fff;
+  border-color: #95989A;
+}
+
+.b-contain input:focus ~ .b-input {
+  box-shadow: 0 0 0 2px #60a5fa;
+}
+
+.b-contain input[type="checkbox"]:checked ~ .b-input {
+  background: #fff;
+  border-color: #95989A;
+}
+
+
+.b-contain input[type="checkbox"]:disabled ~ .b-input{
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.b-contain:hover input[type="checkbox"]:not([disabled]):checked ~ .b-input,
+.b-contain input[type="checkbox"]:checked:focus ~ .b-input {
+  background: #fff;
+  border-color: #95989A;
+}
 

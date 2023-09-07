@@ -219,13 +219,46 @@
                 <p class="contact__p--grey">info@bestshop.xyz</p>
             </div>
 
-            <div class="contact_row">
+            <div class="contact__row">
                 <img src="./assets/Phone Icon 2.svg" alt="phone number" class="contact__img">
-                <p class="contact__p--grey">123. 456 789</p>
+                <p class="contact__p--grey">123 456 789</p>
             </div>
-            <input type="checkbox" name="" id="">
-
+            
+            <form action="#" class="contact__form">
+                <label for="name" class="contact__label">name</label>
+                <input type="text" name="" id="name" class="contact__input">
+                <label for="email" class="contact__label">email</label>
+                <input type="text" class="contact__input" id="email">
+                <div class="contact__column--left">
+                    <label class="b-contain">
+                        <input type="checkbox"/>
+                        <div class="b-input"></div>
+                      </label>
+                </div>
+                <div class="contact__column--right">
+                    <p class="contact__p--darker">I hereby give consent for my personal data included in my application to be processed for the 
+                        purposes of the recruitment process under the European Parliament’s and Council of the European Union 
+                        Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal 
+                        data and on the free movement of such data, 
+                        and repealing Directive 95/46/EC (Data Protection Directive)
+                    </p>
+                </div>
+                <button class="contact__button">Send</button>
+            </form>
         </section>
+
+        <footer class="footer">
+            <div class="footer__column-left">
+                <h3 class="footer__h3">OXYGENShop</h3>
+                <p class="footer__p">© 2022 OXYGEN, All Rights Reserved</p>
+            </div>
+            <div class="footer__column-right">
+                <div class="footer__social">
+                    <img src="./assets/Twitter (2) 2.svg" alt="Twitter" class="footer__img">
+                    <img src="./assets/Facebook (3) 2.svg" alt="Facebook" class="footer__img">
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 <script src="./Js/script.js"></script>
