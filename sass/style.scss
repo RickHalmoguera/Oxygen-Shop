@@ -204,6 +204,12 @@ p,li,button,label,input{
       text-transform: uppercase;
       line-height: 30px;
    }
+
+   &__li:hover{
+      cursor: pointer;
+      color: $--black-color;
+      font-weight: 700;
+   }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -633,7 +639,7 @@ p,li,button,label,input{
 
 .contact{
    background-color: $--white-color;
-   padding:4em 1em;
+   padding:0 1em;
    max-width: 339px;
    margin: 0 auto;
 
@@ -665,7 +671,7 @@ p,li,button,label,input{
       display: inline-block;
       color: $--grey-color;
       font-size: 16px;
-      font-weight: 600;         
+      font-weight: 400;         
    }
 
    &__label{

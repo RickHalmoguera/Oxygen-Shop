@@ -58,6 +58,11 @@ p, li, button, label, input {
   text-transform: uppercase;
   line-height: 30px;
 }
+.nav__li:hover {
+  cursor: pointer;
+  color: #000;
+  font-weight: 700;
+}
 
 @media only screen and (min-width: 1000px) {
   .nav {
@@ -655,7 +660,7 @@ p, li, button, label, input {
 /*-----------CONTACT STYLES--------*/
 .contact {
   background-color: #FFF;
-  padding: 4em 1em;
+  padding: 0 1em;
   max-width: 339px;
   margin: 0 auto;
 }
@@ -682,7 +687,7 @@ p, li, button, label, input {
   display: inline-block;
   color: #A5A5A5;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
 }
 .contact__label {
   display: block;
