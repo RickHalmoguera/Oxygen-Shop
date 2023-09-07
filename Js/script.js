@@ -6,9 +6,6 @@ const menuSrc ="../assets/Menu.svg"
 
 let isOpen = false
 
-/* Checks if the Menu is already open, if its not open, displays de menu links and change the Menu img to the "X" img 
-if its open, hides the menu links and changes the Menu img to the Hamburger*/
-
 const handleMenu = () =>{
     if(isOpen){
         menuBtn.src = menuSrc

@@ -1,13 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Raleway:wght@300;400;700;800&display=swap');
 
-/*----------------VARIABLES------------*/
-
-/*-------FONTS---------*/
-
 $--main-font: 'Raleway', sans-serif;
 $--sec-font:'Open Sans', sans-serif;
-
-/*-------COLORS-------*/
 
 $--blue-color:#08A6E4;
 $--red-color: #EB476E;
@@ -27,8 +21,6 @@ $--topShadow-color:#0000004a;
 $--bottomSHadow-color:#00000033;
 $--blueShadow-color:#07ace64a;
 
-/*----------------GLOBAL STYLES---------*/
-
 * {
    box-sizing: border-box;
    margin: 0;
@@ -46,7 +38,6 @@ h1,h2,h3,span{
 p,li,button,label,input{
    font-family: $--sec-font;
 }
-/*--------------MIXINS-------------------*/
 
 @mixin button{
    width: 308px;
@@ -162,9 +153,6 @@ p,li,button,label,input{
    }
 }
 
-
-/*--------------NAV STYLES--------------*/
-
 .nav {
    z-index: 10000;
    position: fixed;
@@ -241,9 +229,6 @@ p,li,button,label,input{
       }
    }
 }
-
-
-/*-------------HERO STYLES---------*/
 
 .hero{
    margin: 10em 0 5em 0;
@@ -343,7 +328,6 @@ p,li,button,label,input{
    }
 }
 
-/*-----------BENEFITS STYLES--------*/
 
 .benefits{
    background-color: $--otherWhite-color;
@@ -538,8 +522,6 @@ p,li,button,label,input{
    }
 }
 
-/*-----------PRICING STYLES--------*/
-
 .pricing{
    background-color: $--white-color;
    padding:4em 1em;
@@ -635,7 +617,6 @@ p,li,button,label,input{
       }
    }
 }
-/*-----------CONTACT STYLES--------*/
 
 .contact{
    background-color: $--white-color;
@@ -793,8 +774,6 @@ p,li,button,label,input{
 
    }
 }
-
-/*---------------CHECKBOX----------*/
 
 .b-contain *,
 .b-contain *::before,

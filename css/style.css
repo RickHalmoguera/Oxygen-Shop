@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Raleway:wght@300;400;700;800&display=swap");
-/*----------------VARIABLES------------*/
-/*-------FONTS---------*/
-/*-------COLORS-------*/
-/*----------------GLOBAL STYLES---------*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,8 +17,6 @@ p, li, button, label, input {
   font-family: "Open Sans", sans-serif;
 }
 
-/*--------------MIXINS-------------------*/
-/*--------------NAV STYLES--------------*/
 .nav {
   z-index: 10000;
   position: fixed;
@@ -90,7 +84,6 @@ p, li, button, label, input {
     border-bottom: 4px solid #08A6E4;
   }
 }
-/*-------------HERO STYLES---------*/
 .hero {
   margin: 10em 0 5em 0;
   text-align: center;
@@ -179,7 +172,6 @@ p, li, button, label, input {
     gap: 15em;
   }
 }
-/*-----------BENEFITS STYLES--------*/
 .benefits {
   background-color: #F7F7F7;
   padding: 4em 1em;
@@ -369,7 +361,6 @@ p, li, button, label, input {
     z-index: 1;
   }
 }
-/*-----------PRICING STYLES--------*/
 .pricing {
   background-color: #FFF;
   padding: 4em 1em;
@@ -657,7 +648,6 @@ p, li, button, label, input {
     bottom: -16%;
   }
 }
-/*-----------CONTACT STYLES--------*/
 .contact {
   background-color: #FFF;
   padding: 0 1em 4em 1em;
@@ -795,7 +785,6 @@ p, li, button, label, input {
     right: 4em;
   }
 }
-/*---------------CHECKBOX----------*/
 .b-contain *,
 .b-contain *::before,
 .b-contain *::after {
