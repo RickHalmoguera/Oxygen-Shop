@@ -660,7 +660,7 @@ p, li, button, label, input {
 /*-----------CONTACT STYLES--------*/
 .contact {
   background-color: #FFF;
-  padding: 0 1em;
+  padding: 0 1em 4em 1em;
   max-width: 339px;
   margin: 0 auto;
 }
