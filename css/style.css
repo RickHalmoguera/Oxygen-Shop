@@ -376,11 +376,12 @@ p, li, button, label, input {
   margin-bottom: 1em;
 }
 .pricing .card {
-  margin: 0 auto 3em auto;
-  max-width: 293px;
+  margin: 0 auto 5em auto;
+  max-width: 290px;
   padding: 2em 1em 3em 1em;
   border-radius: 18px;
   position: relative;
+  transition: all 0.2s ease-in-out;
   border: 1px solid #EB476E;
 }
 .pricing .card .card__column--left {
@@ -391,7 +392,7 @@ p, li, button, label, input {
 }
 .pricing .card .card__column--left .card__h3 {
   color: #13253B;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
 }
 .pricing .card .card__column--left .card__p {
@@ -414,7 +415,7 @@ p, li, button, label, input {
 }
 .pricing .card .card__column--right .card__item .card__p {
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   margin-left: 0.5em;
 }
@@ -446,7 +447,7 @@ p, li, button, label, input {
   position: absolute;
   width: 150px;
   left: 50%;
-  bottom: -25%;
+  bottom: -22%;
   transform: translate(-50%, -50%);
 }
 .pricing .card .card__button {
@@ -454,14 +455,13 @@ p, li, button, label, input {
   width: 150px;
 }
 .pricing .card--blue {
-  margin: 0 auto 3em auto;
-  max-width: 293px;
+  margin: 0 auto 5em auto;
+  max-width: 290px;
   padding: 2em 1em 3em 1em;
   border-radius: 18px;
   position: relative;
-  max-width: 339px;
+  transition: all 0.2s ease-in-out;
   border: 1px solid #08A6E4;
-  box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
 }
 .pricing .card--blue .card__column--left {
   width: 40%;
@@ -471,7 +471,7 @@ p, li, button, label, input {
 }
 .pricing .card--blue .card__column--left .card__h3 {
   color: #13253B;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
 }
 .pricing .card--blue .card__column--left .card__p {
@@ -494,7 +494,7 @@ p, li, button, label, input {
 }
 .pricing .card--blue .card__column--right .card__item .card__p {
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   margin-left: 0.5em;
 }
@@ -526,7 +526,7 @@ p, li, button, label, input {
   position: absolute;
   width: 150px;
   left: 50%;
-  bottom: -25%;
+  bottom: -22%;
   transform: translate(-50%, -50%);
 }
 .pricing .card--blue .card__column--left .card__p {
@@ -535,14 +535,26 @@ p, li, button, label, input {
 .pricing .card--blue .card__button {
   width: 150px;
   background-color: #08A6E4;
-  box-shadow: 5px 10px 27px 0px rgba(7, 172, 230, 0.2901960784);
+}
+.pricing .card:hover, .pricing .card--blue:hover, .pricing .card--green:hover {
+  transform: translate3D(0, -1px, 0) scale(1.1);
+}
+.pricing .card:hover {
+  box-shadow: 5px 10px 27px 0px #EB476E;
+}
+.pricing .card--blue:hover {
+  box-shadow: 5px 10px 27px 0px #08A6E4;
+}
+.pricing .card--green:hover {
+  box-shadow: 5px 10px 27px 0px #55DFB4;
 }
 .pricing .card--green {
-  margin: 0 auto 3em auto;
-  max-width: 293px;
+  margin: 0 auto 5em auto;
+  max-width: 290px;
   padding: 2em 1em 3em 1em;
   border-radius: 18px;
   position: relative;
+  transition: all 0.2s ease-in-out;
   border: 1px solid #55DFB4;
 }
 .pricing .card--green .card__column--left {
@@ -553,7 +565,7 @@ p, li, button, label, input {
 }
 .pricing .card--green .card__column--left .card__h3 {
   color: #13253B;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
 }
 .pricing .card--green .card__column--left .card__p {
@@ -576,7 +588,7 @@ p, li, button, label, input {
 }
 .pricing .card--green .card__column--right .card__item .card__p {
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
   margin-left: 0.5em;
 }
@@ -608,7 +620,7 @@ p, li, button, label, input {
   position: absolute;
   width: 150px;
   left: 50%;
-  bottom: -25%;
+  bottom: -22%;
   transform: translate(-50%, -50%);
 }
 .pricing .card--green .card__column--left .card__p {
@@ -619,6 +631,27 @@ p, li, button, label, input {
   background-color: #55DFB4;
 }
 
+@media only screen and (min-width: 1000px) {
+  .pricing__flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 4em;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .pricing__flex .card, .pricing__flex .card--blue, .pricing__flex .card--green {
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    justify-content: space-between;
+  }
+  .pricing__flex .card .card__button, .pricing__flex .card--blue .card__button, .pricing__flex .card--green .card__button {
+    bottom: -16%;
+  }
+}
 /*-----------CONTACT STYLES--------*/
 .contact {
   background-color: #FFF;

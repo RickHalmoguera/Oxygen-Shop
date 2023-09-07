@@ -81,11 +81,12 @@ p,li,button,label,input{
 }
 
 @mixin pricing_card{
-   margin: 0 auto 3em auto;
-   max-width: 293px;
+   margin: 0 auto 5em auto;
+   max-width: 290px;
    padding: 2em 1em 3em 1em;
    border-radius: 18px;
    position: relative;
+   transition: all .2s ease-in-out;
 
    .card__column--left{
       width: 40%;
@@ -95,7 +96,7 @@ p,li,button,label,input{
 
       .card__h3{
          color: $--darkBlue-color;
-         font-size: 20px;
+         font-size: 15px;
          font-weight: 700;
       }
 
@@ -122,7 +123,7 @@ p,li,button,label,input{
 
          .card__p{
             display: inline-block;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 400;
             margin-left: .5em;
          }
@@ -156,7 +157,7 @@ p,li,button,label,input{
       position: absolute;
       width: 150px;
       left: 50%;
-      bottom: -25%;
+      bottom: -22%;
       transform: translate(-50%,-50%);
    }
 }
@@ -514,7 +515,7 @@ p,li,button,label,input{
          .card__icon{
             min-width: 440px;
             margin: 0;
-            
+
             .card__img--bgFull{
                min-height: 100%;
             }
@@ -529,7 +530,6 @@ p,li,button,label,input{
          }  
       }
    }
-
 }
 
 /*-----------PRICING STYLES--------*/
@@ -557,9 +557,7 @@ p,li,button,label,input{
 
    .card--blue{
       @include pricing_card;
-      max-width: 339px;
       border: 1px solid $--blue-color;
-      box-shadow: 5px 10px 27px 0px $--blueShadow-color;
    
       .card__column--left{
          .card__p{
@@ -570,8 +568,22 @@ p,li,button,label,input{
       .card__button{
          width: 150px;
          background-color: $--blue-color;
-         box-shadow: 5px 10px 27px 0px $--blueShadow-color;
        }
+   }
+
+   .card:hover,.card--blue:hover, .card--green:hover {
+      transform: translate3D(0,-1px,0) scale(1.10);
+   }
+
+   .card:hover{
+      box-shadow: 5px 10px 27px 0px $--red-color;
+   }
+   .card--blue:hover{
+      box-shadow: 5px 10px 27px 0px $--blue-color;
+   }
+
+   .card--green:hover{
+      box-shadow: 5px 10px 27px 0px $--green-color;
    }
 
    .card--green{
@@ -591,9 +603,32 @@ p,li,button,label,input{
          background-color: $--green-color;
        }
    }
-
 }
 
+@media only screen and (min-width: 1000px) {
+
+   .pricing__flex{
+      display: flex;
+      justify-content: space-between;
+      gap: 4em;
+      max-width: 1400px;
+      margin: 0 auto;
+
+      .card, .card--blue,.card--green{
+         width: 90%;
+         max-width: 90%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 1em;
+         justify-content: space-between;
+       
+         .card__button{
+            bottom: -16%;
+         }
+      }
+      }
+}
 /*-----------CONTACT STYLES--------*/
 
 .contact{
