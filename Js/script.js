@@ -3,8 +3,8 @@ const navUl = document.getElementById("navUl")
 const scrollBar = document.getElementById("scrollBar")
 const backToTop = document.getElementById("backToTop")
 
-const xSrc = "../assets/Frame 14.svg"
-const menuSrc ="../assets/Menu.svg"
+const xSrc = "./assets/Frame 14.svg"
+const menuSrc ="./assets/Menu.svg"
 
 let isOpen = false
 
