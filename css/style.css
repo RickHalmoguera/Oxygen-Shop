@@ -101,6 +101,7 @@ p, li, button, label, input {
   font-weight: 400;
 }
 .hero__button {
+  cursor: pointer;
   width: 308px;
   height: 57px;
   border: none;
@@ -433,6 +434,7 @@ p, li, button, label, input {
   transform: translate(-25%, -110%);
 }
 .pricing .card .card__button {
+  cursor: pointer;
   width: 308px;
   height: 57px;
   border: none;
@@ -512,6 +514,7 @@ p, li, button, label, input {
   transform: translate(-25%, -110%);
 }
 .pricing .card--blue .card__button {
+  cursor: pointer;
   width: 308px;
   height: 57px;
   border: none;
@@ -606,6 +609,7 @@ p, li, button, label, input {
   transform: translate(-25%, -110%);
 }
 .pricing .card--green .card__button {
+  cursor: pointer;
   width: 308px;
   height: 57px;
   border: none;
@@ -709,6 +713,7 @@ p, li, button, label, input {
 .contact__button {
   display: block;
   margin-left: auto;
+  cursor: pointer;
   width: 308px;
   height: 57px;
   border: none;
@@ -765,6 +770,7 @@ p, li, button, label, input {
 }
 .footer__img {
   margin-left: 1em;
+  cursor: pointer;
 }
 .footer__h3 {
   color: #08A6E4;

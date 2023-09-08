@@ -40,6 +40,7 @@ p,li,button,label,input{
 }
 
 @mixin button{
+   cursor: pointer;
    width: 308px;
    height: 57px;
    border: none;
@@ -748,6 +749,7 @@ p,li,button,label,input{
 
    &__img{
       margin-left: 1em;
+      cursor: pointer;
    }
 
    &__h3{
