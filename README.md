@@ -33,28 +33,23 @@ This is my inaugural project from the Oxygen Training program, crafted using HTM
 ![screenshot](./assets/screenshotDesktop.png)
 
 # Mobile Screenshot
-![screenshot](./assetes/screenshotMobile.png)
+![screenshot](./assets/screenshotMobile.png)
 
 ### Built With
 
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [Css](https://developer.mozilla.org/es/docs/Web/CSS)
 - [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-- [Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ## Features
 
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
-This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/gcbWLxG6wdennelX7b8I) was to build an application to complete the given user stories.
+This site was created as a submission to the Training in [Oxygen Academy](https://oxygenacademy.es/). Where we practice layout design and rectify common errors such as excessive usage of Flexbox and Grid.
 
 
 ## Acknowledgements
 
-
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- [CSS display Property](https://www.w3schools.com/cssref/pr_class_display.php)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
 ## Contact
 
