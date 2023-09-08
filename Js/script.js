@@ -1,8 +1,8 @@
 const menuBtn = document.getElementById("menuBtn")
 const navUl = document.getElementById("navUl")
 
-const xSrc = "../assets/Frame 14.svg"
-const menuSrc ="../assets/Menu.svg"
+const xSrc = "./assets/Frame 14.svg"
+const menuSrc ="./assets/Menu.svg"
 
 let isOpen = false
 
