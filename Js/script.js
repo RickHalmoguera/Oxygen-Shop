@@ -41,6 +41,9 @@ const handleClick =() =>{
     setTimeout(()=> window.scrollTo(0, 0), 200)
 }
 
+const formOk = () =>{
+    
+}
 
 menuBtn.addEventListener("click", handleMenu)
 window.addEventListener("scroll", handleScroll)
