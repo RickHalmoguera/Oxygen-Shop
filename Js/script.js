@@ -7,6 +7,7 @@ const menuSrc ="../assets/Menu.svg"
 let isOpen = false
 
 const handleMenu = () =>{
+    console.log("Hola")
     if(isOpen){
         menuBtn.src = menuSrc
         isOpen = false
