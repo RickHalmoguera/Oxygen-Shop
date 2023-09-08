@@ -1,6 +1,7 @@
 const menuBtn = document.getElementById("menuBtn")
 const navUl = document.getElementById("navUl")
 const scrollBar = document.getElementById("scrollBar")
+const backToTop = document.getElementById("backToTop")
 
 const xSrc = "../assets/Frame 14.svg"
 const menuSrc ="../assets/Menu.svg"
@@ -29,8 +30,18 @@ const handleScroll = ()=>{
     
     scrollBar.style.width = percent+"%"
 
+    if(percent > 25){
+        backToTop.style.display ="block"
+    }else{
+        backToTop.style.display="none"
+    }
+}
+
+const handleClick =() =>{
+    setTimeout(()=> window.scrollTo(0, 0), 200)
 }
 
 
-window.addEventListener("scroll", handleScroll)
 menuBtn.addEventListener("click", handleMenu)
+window.addEventListener("scroll", handleScroll)
+backToTop.addEventListener("click",handleClick)
