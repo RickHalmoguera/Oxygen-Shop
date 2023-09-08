@@ -45,6 +45,16 @@ This is my inaugural project from the Oxygen Training program, crafted using HTM
 
 This site was created as a submission to the Training in [Oxygen Academy](https://oxygenacademy.es/). Where we practice layout design and rectify common errors such as excessive usage of Flexbox and Grid.
 
+## How To Use
+
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/RickHalmoguera/Oxygen-Shop
+```
+
+To see the site in your browser, use [http-server](https://www.npmjs.com/package/http-server) or the [Live Server](ritwickdey.LiveServer) Extension for VsCode.
 
 ## Acknowledgements
 
