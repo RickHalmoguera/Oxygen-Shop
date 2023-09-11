@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c45d098780.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>OXYGENShop</title>
 </head>
 <body>
     <header class="nav">
+        <div class="nav__scrollBar" id="scrollBar"></div>
         <h3 class="nav__h3">OXYGENShop</h3>
         <img src="./assets/Menu.svg" alt="Menu" class="nav__img" id="menuBtn">
         <ul class="nav__ul" id="navUl">
@@ -19,6 +21,10 @@
     </header> 
 
     <main>
+        <div class="backToTop" id="backToTop">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </div> 
+
         <section class="hero">
             <h1 class="hero__h1">Sell More!</h1>
             <p class="hero__p">Open shop on our platform and increase your sales</p>
@@ -251,14 +257,16 @@
             </div>
             
             
-            <form action="#" class="contact__form">
-                <label for="name" class="contact__label">name</label>
-                <input type="text" name="" id="name" class="contact__input">
-                <label for="email" class="contact__label">email</label>
-                <input type="text" class="contact__input" id="email">
+            <form class="contact__form" id="contactForm">
+                <label for="nameInput" class="contact__label">name</label>
+                <input type="text" id="nameInput" name="name" class="contact__input">
+                <p class="contact__name-error" id="nameError">The name needs to be at least 2 characters long</p>
+                <label for="emailInput" class="contact__label">email</label>
+                <input type="text" class="contact__input" id="emailInput">
+                <p class="contact__email-error" id="emailError">Email needs to be valid</p>
                 <div class="contact__column--left">
                     <label class="b-contain">
-                        <input type="checkbox"/>
+                        <input type="checkbox" id="checkboxInput" checked/>
                         <div class="b-input"></div>
                       </label>
                 </div>
@@ -270,7 +278,7 @@
                         and repealing Directive 95/46/EC (Data Protection Directive)
                     </p>
                 </div>
-                <button class="contact__button">Send</button>
+                <button class="contact__button" type="submit" form="contactForm" id="contactBtn">Send</button>
             </form>
         </section>
 
