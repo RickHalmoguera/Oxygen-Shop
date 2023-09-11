@@ -257,14 +257,16 @@
             </div>
             
             
-            <form action="#" class="contact__form" id="contactForm">
+            <form class="contact__form" id="contactForm">
                 <label for="nameInput" class="contact__label">name</label>
-                <input type="text" id="nameInput" class="contact__input">
+                <input type="text" id="nameInput" name="name" class="contact__input">
+                <p class="contact__name-error" id="nameError">The name needs to be at least 2 characters long</p>
                 <label for="emailInput" class="contact__label">email</label>
                 <input type="text" class="contact__input" id="emailInput">
+                <p class="contact__email-error" id="emailError">Email needs to be valid</p>
                 <div class="contact__column--left">
                     <label class="b-contain">
-                        <input type="checkbox" id="checkboxInput"/>
+                        <input type="checkbox" id="checkboxInput" checked/>
                         <div class="b-input"></div>
                       </label>
                 </div>
