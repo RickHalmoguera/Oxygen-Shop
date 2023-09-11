@@ -257,14 +257,14 @@
             </div>
             
             
-            <form action="submit" class="contact__form">
-                <label for="name" class="contact__label">name</label>
-                <input type="text" name="" id="name" class="contact__input">
-                <label for="email" class="contact__label">email</label>
-                <input type="text" class="contact__input" id="email">
+            <form action="#" class="contact__form" id="contactForm">
+                <label for="nameInput" class="contact__label">name</label>
+                <input type="text" id="nameInput" class="contact__input">
+                <label for="emailInput" class="contact__label">email</label>
+                <input type="text" class="contact__input" id="emailInput">
                 <div class="contact__column--left">
                     <label class="b-contain">
-                        <input type="checkbox"/>
+                        <input type="checkbox" id="checkboxInput"/>
                         <div class="b-input"></div>
                       </label>
                 </div>
@@ -276,7 +276,7 @@
                         and repealing Directive 95/46/EC (Data Protection Directive)
                     </p>
                 </div>
-                <button class="contact__button" type="submit" form="form1">Send</button>
+                <button class="contact__button" type="submit" form="contactForm" id="contactBtn">Send</button>
             </form>
         </section>
 
