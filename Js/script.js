@@ -10,8 +10,8 @@ const emailInput = document.getElementById("emailInput")
 const checkboxInput = document.getElementById("checkboxInput")
 const contactBtn = document.getElementById("contactBtn")
 
-const xSrc = "./assets/Frame 14.svg"
-const menuSrc ="./assets/Menu.svg"
+const xSrc = "../assets/Frame 14.svg"
+const menuSrc ="../assets/Menu.svg"
 
 let percent = 0
 let isOpen = false
