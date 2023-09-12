@@ -15,6 +15,10 @@ const modalMsg = document.getElementById("modalMsg")
 const modalBtn = document.getElementById("modalBtn")
 const modalBtnClose = document.getElementById("modalBtnClose")
 const modalForm = document.getElementById("modalForm")
+const currencySelect = document.getElementById("currencySelect")
+const basicPrice = document.getElementById("basicPrice")
+const proPrice = document.getElementById ("proPrice")
+const premiumPrice = document.getElementById("premiumPrice") 
 
 const xSrc = "./assets/Frame 14.svg"
 const menuSrc ="./assets/Menu.svg"
@@ -32,6 +36,8 @@ let nameIsValid
 let emailIsValid
 let modalIsValid
 let scrollOver25 = false
+
+let currencyData
 
 
 const handleMenu = () =>{
@@ -187,6 +193,7 @@ const handleSubscribe = (e) =>{
     if(!modalIsValid){
         checkModalEmail()
     }
+
     if(modalIsValid){
         fetch('https://jsonplaceholder.typicode.com/posts/1', {
             method: 'PUT',
@@ -210,7 +217,55 @@ const handleSubscribe = (e) =>{
     }
 }
 
+const fetchCurrencyData =() =>{
+    const url = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json';
+    
+    fetch(url)
+        .then(response => {
+        if (!response.ok) {
+            throw new Error('Something went wrong')
+        }
+        return response.json()
+        })
+        .then(data => {
+        currencyData = data
+        setPrice(currencyData)
+        })
+        .catch(error => {
+        console.error(error)
+        })
+}
 
+const setPrice = (currencyData) => {
+    fetchCurrencyData
+    const usdBasic = 10
+    const usdPro = 25
+    const usdPremium = 60
+    console.log(currencyData.usd.gbp)
+    const eurBasic = "€0" 
+    const eurPro =  "€" + Math.round(usdPro * currencyData.usd.eur)
+    const eurPremium = "€" + Math.round(usdPremium * currencyData.usd.eur)
+
+    const gbpBasic = "£0"
+    const gbpPro = "£" + Math.round(usdPro * currencyData.usd.gbp)
+    const gbpPremium = "£" + Math.round(usdPremium * currencyData.usd.gbp)
+
+    if(currencySelect.value =="usd"){
+        basicPrice.innerText = "$" + usdBasic
+        proPrice.innerText = "$" +usdPro
+        premiumPrice.innerText = "$" +usdPremium
+    }else if(currencySelect.value =="gbp"){
+        basicPrice.innerText = gbpBasic
+        proPrice.innerText = gbpPro
+        premiumPrice.innerText = gbpPremium
+    }else if(currencySelect.value ="eur") {
+        basicPrice.innerText = eurBasic
+        proPrice.innerText = eurPro
+        premiumPrice.innerText = eurPremium
+    }
+}
+
+currencySelect.addEventListener("change",fetchCurrencyData)
 modalForm.addEventListener("submit",handleSubscribe)
 modalBtnClose.addEventListener("click",closeModal)
 modal.addEventListener("click",closeModalClickOutside)
