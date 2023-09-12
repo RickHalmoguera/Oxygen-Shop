@@ -21,6 +21,69 @@ p, li, button, label, input {
   font-family: "Open Sans", sans-serif;
 }
 
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 1em;
+  border-radius: 10px;
+  border: 1px solid rgb(8, 166, 228);
+  text-align: center;
+}
+.modal__h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.modal__button--close {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  background-color: transparent;
+  border: none;
+  color: rgb(8, 166, 228);
+}
+.modal__input {
+  margin-top: 2em;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0;
+}
+.modal__input:focus {
+  outline: none;
+  border-bottom: 2px solid rgb(8, 166, 228);
+}
+.modal__input::placeholder {
+  text-align: center;
+}
+.modal__p {
+  visibility: hidden;
+  margin-top: 0.5em;
+  color: #EB476E;
+  font-size: 12px;
+  height: 4em;
+}
+.modal .correct {
+  color: rgb(8, 166, 228);
+}
+.modal__button {
+  cursor: pointer;
+  width: 308px;
+  height: 57px;
+  border: none;
+  border-radius: 40px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: rgb(8, 166, 228);
+  width: 50%;
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5137254902);
+}
+
 .nav {
   z-index: 10000;
   position: fixed;

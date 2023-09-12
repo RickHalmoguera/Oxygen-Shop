@@ -9,6 +9,12 @@ const emailError = document.getElementById("emailError")
 const emailInput = document.getElementById("emailInput")
 const checkboxInput = document.getElementById("checkboxInput")
 const contactBtn = document.getElementById("contactBtn")
+const modal = document.getElementById("modal")
+const modalInput = document.getElementById("modalInput")
+const modalMsg = document.getElementById("modalMsg")
+const modalBtn = document.getElementById("modalBtn")
+const modalBtnClose = document.getElementById("modalBtnClose")
+const modalForm = document.getElementById("modalForm")
 
 const xSrc = "./assets/Frame 14.svg"
 const menuSrc ="./assets/Menu.svg"
@@ -18,9 +24,9 @@ let isOpen = false
 let isValid
 let nameIsValid
 let emailIsValid
+let modalIsValid
 
 const handleMenu = () =>{
-    console.log("Hola")
     if(isOpen){
         menuBtn.src = menuSrc
         isOpen = false
@@ -55,7 +61,6 @@ const handleClick =() =>{
 const formOk = () =>{
     
 }
-
 
 const checkName = ()=>{
     
@@ -102,12 +107,78 @@ const handleSubmit = (e) =>{
         })
         .then((response) => response.json())
         .then((json) => console.log(json));
-    }else{
+    }
+    if(!nameIsValid || !emailIsValid){
         checkName()
         checkEmail()
     }
 }
 
+setTimeout(()=> modal.showModal(), 5000)
+
+const closeModalClickOutside = (e) =>{
+    const modalDimensions = modal.getBoundingClientRect()
+    if (
+      e.clientX < modalDimensions.left ||
+      e.clientX > modalDimensions.right ||
+      e.clientY < modalDimensions.top ||
+      e.clientY > modalDimensions.bottom
+    ) {
+      modal.close()
+    }
+}
+
+const closeModal = () =>{
+    modal.close()
+}
+
+const checkModalEmail = ()=>{
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+    if(!emailRegex.test(modalInput.value)){
+        modalMsg.style.visibility="visible"
+        modalMsg.classList.remove("correct")
+        modalInput.classList.add("input-error")
+        modalIsValid = false
+    }else {
+        modalIsValid = true
+        modalInput.classList.remove("input-error")
+      }
+}
+
+const handleSubscribe = (e) =>{
+    e.preventDefault()
+
+    if(!modalIsValid){
+        checkModalEmail()
+    }
+    if(modalIsValid){
+        fetch('https://jsonplaceholder.typicode.com/posts/1', {
+            method: 'PUT',
+            body: JSON.stringify({
+            id: 1,
+            email: modalInput.value,
+            userId: 1,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+        })
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+
+        modalMsg.style.visibility ="visible"
+        modalMsg.innerText ="Thanks for subscribing"
+        modalMsg.classList.add("correct")
+        setTimeout(()=> modal.close(), 1000)
+
+    }
+}
+
+
+modalForm.addEventListener("submit",handleSubscribe)
+modalBtnClose.addEventListener("click",closeModal)
+modal.addEventListener("click",closeModalClickOutside)
 menuBtn.addEventListener("click", handleMenu)
 window.addEventListener("scroll", handleScroll)
 backToTop.addEventListener("click",handleClick)
