@@ -22,7 +22,6 @@ p, li, button, label, input {
 }
 
 .modal {
-  position: relative;
   margin: auto;
   padding: 1em;
   border-radius: 10px;

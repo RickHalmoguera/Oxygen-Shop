@@ -19,12 +19,20 @@ const modalForm = document.getElementById("modalForm")
 const xSrc = "./assets/Frame 14.svg"
 const menuSrc ="./assets/Menu.svg"
 
+const waitTime = 5000
+
 let percent = 0
 let isOpen = false
+let isClosed = false
+let htmlCurrentPx
+let htmlHeightPx
+let windowHeightPx
 let isValid
 let nameIsValid
 let emailIsValid
 let modalIsValid
+let scrollOver25 = false
+
 
 const handleMenu = () =>{
     if(isOpen){
@@ -39,11 +47,11 @@ const handleMenu = () =>{
 }
 
 const handleScroll = ()=>{
-    let htmlCurrentPx = document.documentElement.scrollTop
-    let htmlHeightPx = document.documentElement.scrollHeight
-    let windowHeightpx = window.innerHeight
+    htmlCurrentPx = document.documentElement.scrollTop
+    htmlHeightPx = document.documentElement.scrollHeight
+    windowHeightPx = window.innerHeight
     
-    percent = Math.round(htmlCurrentPx / (htmlHeightPx - windowHeightpx)*100)
+    percent = Math.round(htmlCurrentPx / (htmlHeightPx - windowHeightPx)*100)
     
     scrollBar.style.width = percent+"%"
 
@@ -114,7 +122,32 @@ const handleSubmit = (e) =>{
     }
 }
 
-setTimeout(()=> modal.showModal(), 5000)
+const checkLocalStorage = () =>{
+    const storageValue = sessionStorage.getItem('isClosed');
+    if (storageValue === 'true') {
+      return true;
+    } else if (storageValue === 'false') {
+      return false;
+}
+}
+
+const checkScrollModal =()=>{
+    if(percent >=25 && checkLocalStorage() != true){
+        scrollOver25 = true
+        modal.showModal()
+        window.removeEventListener("scroll", checkScrollModal)
+    }
+}
+
+const checkAndOpenModal = ()=>{
+    if(!scrollOver25 && checkLocalStorage() != true){
+        modal.showModal()
+        window.removeEventListener("scroll", checkScrollModal)
+    }
+}
+
+setTimeout(checkAndOpenModal, waitTime)
+
 
 const closeModalClickOutside = (e) =>{
     const modalDimensions = modal.getBoundingClientRect()
@@ -124,11 +157,13 @@ const closeModalClickOutside = (e) =>{
       e.clientY < modalDimensions.top ||
       e.clientY > modalDimensions.bottom
     ) {
-      modal.close()
+      closeModal()
     }
 }
 
 const closeModal = () =>{
+    isClosed = true
+    sessionStorage.setItem('isClosed', isClosed.toString());
     modal.close()
 }
 
@@ -170,7 +205,7 @@ const handleSubscribe = (e) =>{
         modalMsg.style.visibility ="visible"
         modalMsg.innerText ="Thanks for subscribing"
         modalMsg.classList.add("correct")
-        setTimeout(()=> modal.close(), 1000)
+        setTimeout(closeModal, 1000)
 
     }
 }
@@ -181,6 +216,7 @@ modalBtnClose.addEventListener("click",closeModal)
 modal.addEventListener("click",closeModalClickOutside)
 menuBtn.addEventListener("click", handleMenu)
 window.addEventListener("scroll", handleScroll)
+window.addEventListener("scroll", checkScrollModal)
 backToTop.addEventListener("click",handleClick)
 nameInput.addEventListener("input",checkName)
 emailInput.addEventListener("input",checkEmail)
