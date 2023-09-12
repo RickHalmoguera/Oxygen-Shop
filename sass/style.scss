@@ -415,7 +415,6 @@ p,li,button,label,input{
          justify-content: center;
          gap: 15em;
       }
-
    }
 }
 
@@ -617,6 +616,10 @@ p,li,button,label,input{
    background-color: $--white-color;
    padding:4em 1em;
 
+   &__select{
+      display: block;
+      margin-left: auto;
+   }
    &__h2{
       text-align: center;
       font-size: 36px;

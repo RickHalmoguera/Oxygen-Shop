@@ -128,13 +128,18 @@
         </section>
 
         <section class="pricing">
+            <select name="select" id="currencySelect" class="pricing__select">
+                <option value="eur">EUR</option>
+                <option value="usd" selected>USD</option>
+                <option value="gbp">GBP</option>
+            </select>
             <h2 class="pricing__h2">Pricing</h2>
             <div class="pricing__flex">
 
                 <div class="pricing__card card">
                     <div class="card__column--left">
                         <h3 class="card__h3">Basic</h3>
-                        <p class="card__p">$0</p>
+                        <p class="card__p" id="basicPrice">$0</p>
                     </div>
                     <div class="card__column--right">
                         <div class="card__item">
@@ -176,7 +181,7 @@
                 <div class="pricing__card card--blue">
                     <div class="card__column--left">
                         <h3 class="card__h3">Professional</h3>
-                        <p class="card__p">$25</p>
+                        <p class="card__p" id="proPrice">$25</p>
                         <p class="card__span">Limited offer</p>
                     </div>
                     <div class="card__column--right">
@@ -215,7 +220,7 @@
                 <div class="pricing__card card--green">
                     <div class="card__column--left">
                         <h3 class="card__h3">Premium</h3>
-                        <p class="card__p">$60</p>
+                        <p class="card__p" id="premiumPrice">$60</p>
                         <p class="card__span">Limited offer</p>
                     </div>
                     <div class="card__column--right">

@@ -454,6 +454,10 @@ p, li, button, label, input {
   background-color: #FFF;
   padding: 4em 1em;
 }
+.pricing__select {
+  display: block;
+  margin-left: auto;
+}
 .pricing__h2 {
   text-align: center;
   font-size: 36px;
