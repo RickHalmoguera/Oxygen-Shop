@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">Casa (Av. del Mar, 78)zra
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c45d098780.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <title>OXYGENShop</title>
 </head>
 <body>
+    <dialog class="modal" id="modal">
+        <form id="modalForm" class="modal__form">
+          <h2 class="modal__h2">Subscribe to our newsletter</h2>
+          <button class="modal__button--close" id="modalBtnClose">X</button>
+          <input class="modal__input" type="email" id="modalInput" placeholder="Email"/>
+          <p class="modal__p" id="modalMsg">Email needs to be valid</p>
+          <button class="modal__button" id="modalBtn" type="submit">Subscribe</button>
+        </form>
+    </dialog>
+
     <header class="nav">
         <div class="nav__scrollBar" id="scrollBar"></div>
         <h3 class="nav__h3">OXYGENShop</h3>
@@ -24,6 +34,8 @@
         <div class="backToTop" id="backToTop">
             <i class="fa-solid fa-circle-chevron-up"></i>
         </div> 
+
+        
 
         <section class="hero">
             <h1 class="hero__h1">Sell More!</h1>

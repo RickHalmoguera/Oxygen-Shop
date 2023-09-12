@@ -7,7 +7,9 @@ $--blue-color:rgb(8, 166, 228);
 $--red-color: #EB476E;
 $--green-color:#55DFB4;
 
+
 $--black-color: #000;
+$--black-modal:#00000083;
 $--darkBlue-color:#13253B;
 $--darkerGrey-color:#707070;
 $--darkGrey-color:#95989A;
@@ -145,7 +147,6 @@ p,li,button,label,input{
             transform: translate(-25%,-110%)
          }
       }
-
    }
 
    .card__button{
@@ -158,6 +159,69 @@ p,li,button,label,input{
    }
 }
 
+.modal{
+
+   margin: auto;
+   padding: 1em;
+   border-radius: 10px ;
+   border: 1px solid $--blue-color;
+   text-align: center;
+
+   &__h2{
+      font-size: 30px;
+      font-weight: 300;
+   }
+
+   &__button--close{
+      cursor: pointer;
+      position: absolute;
+      top:.5em;
+      right: .5em;
+      background-color: transparent;
+      border: none;
+      color: $--blue-color;
+   }
+
+   &__input{
+      margin-top: 2em;
+      border: none;
+      border-bottom: 1px solid $--black-color;
+      width: 100%;
+      
+      text-align: center;
+      padding-bottom: 0;
+   }
+
+   &__input:focus{
+      outline: none;
+      border-bottom: 2px solid $--blue-color
+   }
+
+   &__input::placeholder{
+      text-align: center;
+   }
+
+   &__p{
+      visibility: hidden;
+      margin-top: .5em;
+      color: $--red-color;
+      font-size: 12px;
+      height: 4em;
+   }
+
+   .correct{
+      color: $--blue-color;
+   }
+   &__button{
+      @include button;
+      background-color: $--blue-color;
+      width: 50%;
+   }
+}
+
+.modal::backdrop{
+   background-color: $--black-modal;
+}
 .nav {
    z-index: 10000;
    position: fixed;
@@ -707,7 +771,6 @@ p,li,button,label,input{
       font-size: 12px;
       height: 4em;
    }
-
 
 
    &__input:focus{
