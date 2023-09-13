@@ -747,7 +747,9 @@ p, li, button, label, input {
 .slider {
   display: flex;
   overflow: hidden;
-  width: 300px;
+  max-width: 300px;
+  border-radius: 18px;
+  border: 1px solid rgb(8, 166, 228);
   margin: 0 auto;
 }
 .slider__slide {
@@ -778,6 +780,11 @@ p, li, button, label, input {
   background-color: #333;
 }
 
+@media only screen and (min-width: 1000px) {
+  .slider {
+    max-width: 1000px;
+  }
+}
 .contact {
   background-color: #FFF;
   padding: 0 1em 4em 1em;

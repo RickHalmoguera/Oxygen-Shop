@@ -715,7 +715,9 @@ p,li,button,label,input{
 .slider {
    display: flex;
    overflow: hidden;
-   width: 300px;
+   max-width: 300px;
+   border-radius: 18px;
+   border: 1px solid $--blue-color;
    margin: 0 auto;
 
    &__slide {
@@ -751,6 +753,12 @@ p,li,button,label,input{
       background-color: #333;
    }
 }
+@media only screen and (min-width: 1000px) {
+   .slider {
+      max-width: 1000px;
+   }
+}
+
 
 
 
