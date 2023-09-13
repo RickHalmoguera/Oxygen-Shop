@@ -41,7 +41,7 @@ h1,h2,h3,span{
    font-family: $--main-font;
 }
 
-p,li,button,label,input{
+p,a,button,label,input{
    font-family: $--sec-font;
 }
 
@@ -222,6 +222,7 @@ p,li,button,label,input{
 .modal::backdrop{
    background-color: $--black-modal;
 }
+
 .nav {
    z-index: 10000;
    position: fixed;
@@ -264,12 +265,18 @@ p,li,button,label,input{
    }
 
    &__li{
+      display: block;
       color: $--grey-color;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 3.28px;
       text-transform: uppercase;
       line-height: 30px;
+   }
+
+   a{
+      text-decoration: none;
+
    }
 
    &__li:hover{
@@ -296,6 +303,7 @@ p,li,button,label,input{
       }
 
       &__li{
+         display: inline-block;
          border: 2px solid transparent;
          padding: 1.5em 0;
          
