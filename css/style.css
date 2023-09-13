@@ -746,14 +746,12 @@ p, li, button, label, input {
 }
 .slider {
   position: relative;
-  padding: 2em;
   display: flex;
   overflow: hidden;
   max-width: 300px;
   border-radius: 18px;
   border: 2px solid rgb(8, 166, 228);
   margin: 0 auto;
-  background-color: #000;
 }
 .slider__slide {
   width: 100%;
@@ -792,7 +790,7 @@ p, li, button, label, input {
 .slider__dot {
   height: 10px;
   width: 10px;
-  background-color: #A5A5A5;
+  background-color: #000;
   border-radius: 50%;
   display: inline-block;
   margin: 0 5px;

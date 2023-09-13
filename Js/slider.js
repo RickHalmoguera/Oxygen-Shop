@@ -12,9 +12,15 @@ class slider {
         this.slideLength =this.slides.length
         this.dots = document.querySelectorAll(".slider__dot");
         
-        this.next.addEventListener("click",()=>this.nextSlide())
+        this.next.addEventListener("click",()=>{
+            clearInterval(this.autoPlayInterval)
+            this.nextSlide()
+        })
         this.previous.addEventListener("click",()=>this.prevSlide())
+
+        this.startAutoPlay();
     }
+    
     
     updateDots(dot){
         dot.classList.remove("active")
@@ -40,6 +46,14 @@ class slider {
         this.dots[this.index].classList.add("active")
     }
 
-  };
-  
+    goToSlide(){
+
+    }
+
+    startAutoPlay() {
+        this.autoPlayInterval = setInterval(() => {
+        this.nextSlide();
+        }, 3000)
+  }
+}
   new slider();
