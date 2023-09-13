@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">Casa (Av. del Mar, 78)zra
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c45d098780.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
@@ -23,10 +23,10 @@
         <h3 class="nav__h3">OXYGENShop</h3>
         <img src="./assets/Menu.svg" alt="Menu" class="nav__img" id="menuBtn">
         <div class="nav__ul" id="navUl">
-            <a class="nav__li">why us</a>
-            <a class="nav__li">benefits</a>
-            <a class="nav__li">prices</a>
-            <a class="nav__li">contact</a>
+            <a href="#whyUs" class="nav__li">why us</a>
+            <a href="benefits" class="nav__li">benefits</a>
+            <a href="#pricing" class="nav__li">prices</a>
+            <a href="#contact" class="nav__li">contact</a>
         </>
     </header> 
 
@@ -37,7 +37,7 @@
 
         
 
-        <section class="hero">
+        <section class="hero" id="whyUs">
             <h1 class="hero__h1">Sell More!</h1>
             <p class="hero__p">Open shop on our platform and increase your sales</p>
             <button class="hero__button">Open your shop</button>
@@ -78,7 +78,7 @@
 
         </section>
 
-        <section class="benefits">
+        <section class="benefits" id="benefits">
             <div class="beneftis__card card">
                 <div class="card__icon">
                     <img src="./assets/Rectange 30.png" alt="" class="card__img--bg">
@@ -127,7 +127,7 @@
             </div>
         </section>
 
-        <section class="pricing">
+        <section class="pricing" id="pricing">
             <select name="select" id="currencySelect" class="pricing__select">
                 <option value="eur">EUR</option>
                 <option value="usd" selected>USD</option>
@@ -257,7 +257,7 @@
             <div id="slider" class="slider">
                 <img src="./assets/image1.jpg" id="sliderImage" class=" slider__slide">
                 <i class="fa-solid fa-circle-chevron-left slider__button" id="prevBtn"></i>
-                <i class="fa-solid fa-circle-chevron-right slider__button" id="nextBtn"></i>
+                <i class="fa-solid fa-circle-chevron-up slider__button" id="nextBtn"></i>
                 <div class="slider__dots">
                     <span class="slider__dot active"></span>
                     <span class="slider__dot"></span>
@@ -268,7 +268,7 @@
                 
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="contact__column">
                 <h2 class="contact__h2">Any questions?</h2>
                 <p class="contact__p">Leave you email address or call us!</p>
