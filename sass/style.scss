@@ -714,14 +714,12 @@ p,li,button,label,input{
 
 .slider {
    position: relative;
-   padding: 2em;
    display: flex;
    overflow: hidden;
    max-width: 300px;
    border-radius: 18px;
    border: 2px solid $--blue-color;
    margin: 0 auto;
-   background-color: $--black-color;
 
    &__slide {
       width: 100%;
@@ -767,7 +765,7 @@ p,li,button,label,input{
    &__dot {
       height: 10px;
       width: 10px;
-      background-color:$--grey-color;
+      background-color:$--black-color;
       border-radius: 50%;
       display: inline-block;
       margin: 0 5px;
