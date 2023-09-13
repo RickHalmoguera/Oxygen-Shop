@@ -713,12 +713,15 @@ p,li,button,label,input{
 }
 
 .slider {
+   position: relative;
+   padding: 2em;
    display: flex;
    overflow: hidden;
    max-width: 300px;
    border-radius: 18px;
-   border: 1px solid $--blue-color;
+   border: 2px solid $--blue-color;
    margin: 0 auto;
+   background-color: $--black-color;
 
    &__slide {
       width: 100%;
@@ -730,28 +733,48 @@ p,li,button,label,input{
    }
    
    &__button {
-      padding: 10px 20px;
-      font-size: 16px;
+      color: $--blue-color;
+      font-size: 20px;
       cursor: pointer;
+   }
+
+   #prevBtn{
+      position: absolute;
+      top: 50%;
+      left: .2em;
+      transform: translateY(-50%);
+   }
+
+   #nextBtn{
+      position: absolute;
+      top: 50%;
+      right: .2em;
+      transform: translateY(-50%);
    }
    
    &__dots {
-      margin-top: 10px;
+      position: absolute;
+      display: flex;
+      bottom: .7em;
+      left: 50%;
+      transform: translateX(-50%);
+
+      .active {
+         background-color: $--blue-color;
+      }
    }
    
    &__dot {
       height: 10px;
       width: 10px;
-      background-color: #555;
+      background-color:$--grey-color;
       border-radius: 50%;
       display: inline-block;
       margin: 0 5px;
       cursor: pointer;
    }
    
-   .active {
-      background-color: #333;
-   }
+   
 }
 @media only screen and (min-width: 1000px) {
    .slider {
