@@ -265,6 +265,7 @@ const setPrice = (currencyData) => {
     }
 }
 
+
 currencySelect.addEventListener("change",fetchCurrencyData)
 modalForm.addEventListener("submit",handleSubscribe)
 modalBtnClose.addEventListener("click",closeModal)
