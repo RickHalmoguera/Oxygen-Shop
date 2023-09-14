@@ -40,10 +40,26 @@ This is my inaugural project from the Oxygen Training program, crafted using HTM
 - [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 - [Css](https://developer.mozilla.org/es/docs/Web/CSS)
 - [FlexBox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)
 
 ## Features
 
-This site was created as a submission to the Training in [Oxygen Academy](https://oxygenacademy.es/). Where we practice layout design and rectify common errors such as excessive usage of Flexbox and Grid.
+This site was created as a submission to the Training in [Oxygen Academy](https://oxygenacademy.es/). Where we practice the following points:
+
+- Practicing layout design and identifying common errors, such as excessive use of Flex Box or Grid.
+- Manipulating the DOM through JavaScript.
+- Sending and requesting data from an API using an API.
+- Data validation of a form.
+
+We can observe these practices in the following features:
+
+- A progress bar that displays our scrolling progress on the page.
+- A dropdown menu in the mobile version.
+- The menu contains links that navigate us to different sections of the page.
+- If the user scrolls more than 25% of the page or stays on the page for more than 5 seconds, a modal will appear, asking if we want to subscribe to the newsletter. It won't reappear after closing it.
+- In the pricing section, we can switch between USD, EUR, and GBP currencies.
+- A slider with 4 images that automatically advances and can also be controlled through two buttons.
+- A form that requests our name, email, and a checkbox. This form will validate that all the data is correct before being sent to the server and will provide feedback if the data is correct.
 
 ## How To Use
 
