@@ -3,6 +3,7 @@ const navUl = document.getElementById("navUl")
 const scrollBar = document.getElementById("scrollBar")
 const backToTop = document.getElementById("backToTop")
 const contactForm = document.getElementById("contactForm")
+const contactFeedback = document.getElementById("contactFeedback")
 const nameInput = document.getElementById("nameInput")
 const nameError = document.getElementById("nameError")
 const emailError = document.getElementById("emailError")
@@ -121,6 +122,16 @@ const handleSubmit = (e) =>{
         })
         .then((response) => response.json())
         .then((json) => console.log(json));
+
+        nameInput.value =""
+        emailInput.value =""
+        contactForm.style.display ="none"
+        contactFeedback.style.display = "block"
+        setTimeout( ()=>{
+            contactFeedback.style.display = "none"
+            contactForm.style.display ="block"
+        },2000)
+
     }
     if(!nameIsValid || !emailIsValid){
         checkName()

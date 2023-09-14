@@ -892,7 +892,14 @@ p,a,button,label,input{
       font-size: 12px;
       font-weight: 400;
    }
+
+   &__feedback{
+      display: none;
+      text-align: center;
+   }
 }
+
+
 
 @media only screen and (min-width: 1000px) {
    .contact{
@@ -914,6 +921,12 @@ p,a,button,label,input{
       }
       &__form{
          width: 50%;
+      }
+
+      &__feedback{
+         max-width: 50%;
+         align-self: center;
+         height: 414px;
       }
    }
 
