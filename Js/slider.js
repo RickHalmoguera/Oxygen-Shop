@@ -16,8 +16,10 @@ class slider {
             clearInterval(this.autoPlayInterval)
             this.nextSlide()
         })
-        this.previous.addEventListener("click",()=>this.prevSlide())
-
+        this.previous.addEventListener("click",()=>{
+            clearInterval(this.autoPlayInterval)
+            this.prevSlide()
+        })
         this.startAutoPlay();
     }
     
