@@ -162,7 +162,7 @@ p,a,button,label,input{
 .modal{
 
    margin: auto;
-   padding: 1em;
+   padding: 2.5em;
    border-radius: 10px ;
    border: 1px solid $--blue-color;
    text-align: center;
@@ -175,8 +175,9 @@ p,a,button,label,input{
    &__button--close{
       cursor: pointer;
       position: absolute;
-      top:.5em;
-      right: .5em;
+      font-size: 1.2rem;
+      top: .7em;
+      right: .7em;
       background-color: transparent;
       border: none;
       color: $--blue-color;
@@ -319,6 +320,7 @@ p,a,button,label,input{
 }
 
 .backToTop{
+   z-index: 1000000;
    display: none;
    cursor: pointer;
    position: fixed;

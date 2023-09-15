@@ -18,7 +18,7 @@
         </form>
     </dialog>
 
-    <header class="nav">
+    <nav class="nav">
         <div class="nav__scrollBar" id="scrollBar"></div>
         <h3 class="nav__h3">OXYGENShop</h3>
         <img src="./assets/Menu.svg" alt="Menu" class="nav__img" id="menuBtn">
@@ -27,8 +27,8 @@
             <a href="#benefits" class="nav__li">benefits</a>
             <a href="#pricing" class="nav__li">prices</a>
             <a href="#contact" class="nav__li">contact</a>
-        </>
-    </header> 
+        </div>
+    </nav> 
 
     <main>
         <div class="backToTop" id="backToTop">
@@ -136,7 +136,7 @@
             <h2 class="pricing__h2">Pricing</h2>
             <div class="pricing__flex">
 
-                <div class="pricing__card card">
+                <article class="pricing__card card">
                     <div class="card__column--left">
                         <h3 class="card__h3">Basic</h3>
                         <p class="card__p" id="basicPrice">$0</p>
@@ -176,9 +176,9 @@
                     </div>
     
                     <button class="card__button">Begin</button>
-                </div>
+                </article>
     
-                <div class="pricing__card card--blue">
+                <article class="pricing__card card--blue">
                     <div class="card__column--left">
                         <h3 class="card__h3">Professional</h3>
                         <p class="card__p" id="proPrice">$25</p>
@@ -215,9 +215,9 @@
                     </div>
     
                     <button class="card__button">Begin</button>
-                </div>
+                </article>
     
-                <div class="pricing__card card--green">
+                <article class="pricing__card card--green">
                     <div class="card__column--left">
                         <h3 class="card__h3">Premium</h3>
                         <p class="card__p" id="premiumPrice">$60</p>
@@ -251,10 +251,10 @@
                     </div>
     
                     <button class="card__button">Begin</button>
-                </div>
+                </article>
             </div>
 
-            <div id="slider" class="slider">
+            <article id="slider" class="slider">
                 <img src="./assets/image1.jpg" id="sliderImage" class=" slider__slide">
                 <i class="fa-solid fa-circle-chevron-left slider__button" id="prevBtn"></i>
                 <i class="fa-solid fa-circle-chevron-right slider__button" id="nextBtn"></i>
@@ -264,7 +264,7 @@
                     <span class="slider__dot"></span>
                     <span class="slider__dot"></span>
                 </div>
-            </div>
+            </article>
                 
         </section>
 
@@ -315,20 +315,20 @@
                 <h2 class="contact__h2">Thank you! We will get back to you ass soon as we can.</h2>                
             </div>
         </section>
-
-        <footer class="footer">
-            <div class="footer__column-left">
-                <h3 class="footer__h3">OXYGENShop</h3>
-                <p class="footer__p">© 2022 OXYGEN, All Rights Reserved</p>
-            </div>
-            <div class="footer__column-right">
-                <div class="footer__social">
-                    <img src="./assets/Twitter (2) 2.svg" alt="Twitter" class="footer__img">
-                    <img src="./assets/Facebook (3) 2.svg" alt="Facebook" class="footer__img">
-                </div>
-            </div>
-        </footer>
     </main>
+
+    <footer class="footer">
+        <div class="footer__column-left">
+            <h3 class="footer__h3">OXYGENShop</h3>
+            <p class="footer__p">© 2022 OXYGEN, All Rights Reserved</p>
+        </div>
+        <div class="footer__column-right">
+            <div class="footer__social">
+                <img src="./assets/Twitter (2) 2.svg" alt="Twitter" class="footer__img">
+                <img src="./assets/Facebook (3) 2.svg" alt="Facebook" class="footer__img">
+            </div>
+        </div>
+    </footer>
 </body>
 <script src="./Js/script.js"></script>
 <script src="./Js/slider.js"></script>

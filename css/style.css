@@ -23,7 +23,7 @@ p, a, button, label, input {
 
 .modal {
   margin: auto;
-  padding: 1em;
+  padding: 2.5em;
   border-radius: 10px;
   border: 1px solid rgb(8, 166, 228);
   text-align: center;
@@ -35,8 +35,9 @@ p, a, button, label, input {
 .modal__button--close {
   cursor: pointer;
   position: absolute;
-  top: 0.5em;
-  right: 0.5em;
+  font-size: 1.2rem;
+  top: 0.7em;
+  right: 0.7em;
   background-color: transparent;
   border: none;
   color: rgb(8, 166, 228);
@@ -167,6 +168,7 @@ p, a, button, label, input {
   }
 }
 .backToTop {
+  z-index: 1000000;
   display: none;
   cursor: pointer;
   position: fixed;
