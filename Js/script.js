@@ -73,9 +73,6 @@ const handleClick =() =>{
     setTimeout(()=> window.scrollTo(0, 0), 200)
 }
 
-const formOk = () =>{
-    
-}
 
 const checkName = ()=>{
     
@@ -121,7 +118,7 @@ const handleSubmit = (e) =>{
             },
         })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((json) => console.log(json))
 
         nameInput.value =""
         emailInput.value =""
@@ -140,11 +137,11 @@ const handleSubmit = (e) =>{
 }
 
 const checkLocalStorage = () =>{
-    const storageValue = sessionStorage.getItem('isClosed');
+    const storageValue = sessionStorage.getItem('isClosed')
     if (storageValue === 'true') {
-      return true;
+      return true
     } else if (storageValue === 'false') {
-      return false;
+      return false
 }
 }
 
@@ -180,7 +177,7 @@ const closeModalClickOutside = (e) =>{
 
 const closeModal = () =>{
     isClosed = true
-    sessionStorage.setItem('isClosed', isClosed.toString());
+    sessionStorage.setItem('isClosed', isClosed.toString())
     modal.close()
 }
 
@@ -218,7 +215,7 @@ const handleSubscribe = (e) =>{
             },
         })
         .then((response) => response.json())
-        .then((json) => console.log(json));
+        .then((json) => console.log(json))
 
         modalMsg.style.visibility ="visible"
         modalMsg.innerText ="Thanks for subscribing"
@@ -229,7 +226,7 @@ const handleSubscribe = (e) =>{
 }
 
 const fetchCurrencyData =() =>{
-    const url = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json';
+    const url = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.json'
     
     fetch(url)
         .then(response => {
