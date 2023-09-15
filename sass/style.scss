@@ -31,6 +31,7 @@ $--blueShadow-color:#07ace64a;
 
 html{
    scroll-behavior: smooth;
+   font-size: 1rem;
 }
 
 body {
@@ -52,7 +53,7 @@ p,a,button,label,input{
    border: none;
    border-radius: 40px;
    color: $--white-color;
-   font-size: 16px;
+   font-size: 1.6rem;
    font-weight: 700;
 }
 
@@ -62,18 +63,19 @@ p,a,button,label,input{
    border-radius: 5px;
    border: 1px solid $--greyBorder-color;
    background-color: $--white-color;
-   max-width: 315px;margin: 2em auto;
+   max-width: 315px;
+   margin: 2em auto;
    position: relative;
 
    &__h3{
       max-width: 225px;
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: 400;
       margin-bottom: 1em;
    }
 
    &__p{
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 400;
    }
 }
@@ -94,19 +96,19 @@ p,a,button,label,input{
 
       .card__h3{
          color: $--darkBlue-color;
-         font-size: 15px;
+         font-size: 1.5rem;
          font-weight: 700;
       }
 
       .card__p{
          color: $--red-color;
-         font-size: 46px;
+         font-size: 4.6rem;
          font-weight: 300;
       }
 
       .card__span{
          color: $--darkBlue-color;
-         font-size: 12px;
+         font-size: 1.2rem;
          font-weight: 700;
       }
    }
@@ -121,7 +123,7 @@ p,a,button,label,input{
 
          .card__p{
             display: inline-block;
-            font-size: 13px;
+            font-size: 1.3rem;
             font-weight: 400;
             margin-left: .5em;
          }
@@ -154,8 +156,8 @@ p,a,button,label,input{
       position: absolute;
       width: 150px;
       left: 50%;
-      bottom: -22%;
-      transform: translate(-50%,-50%);
+      bottom: -15%;
+      transform: translateX(-50%);
    }
 }
 
@@ -168,7 +170,7 @@ p,a,button,label,input{
    text-align: center;
 
    &__h2{
-      font-size: 30px;
+      font-size: 3rem;
       font-weight: 300;
    }
 
@@ -206,7 +208,7 @@ p,a,button,label,input{
       visibility: hidden;
       margin-top: .5em;
       color: $--red-color;
-      font-size: 12px;
+      font-size: 1.2rem;
       height: 4em;
    }
 
@@ -248,7 +250,7 @@ p,a,button,label,input{
       display: inline-block;
       color: $--blue-color;
       font-family: $--main-font;
-      font-size: 32px;
+      font-size: 3.2rem;
       font-weight: 300;
    }
 
@@ -268,7 +270,7 @@ p,a,button,label,input{
    &__li{
       display: block;
       color: $--grey-color;
-      font-size: 11px;
+      font-size: 1.1rem;
       font-weight: 700;
       letter-spacing: 3.28px;
       text-transform: uppercase;
@@ -326,7 +328,7 @@ p,a,button,label,input{
    position: fixed;
    bottom: 4em;
    right: .5em;
-   font-size: 30px;
+   font-size: 3rem;
    color: $--blue-color;
    filter: drop-shadow(0px 1px 2px $--black-color) ;
 }
@@ -337,7 +339,7 @@ p,a,button,label,input{
 
    &__h1{
       color: $--black-color;
-      font-size: 35px;
+      font-size: 3.5rem;
       font-weight: 400;
    }
 
@@ -345,7 +347,7 @@ p,a,button,label,input{
       margin: 1em auto;
       max-width: 300px;
       color: $--black-color;
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 400;
    }
 
@@ -370,7 +372,7 @@ p,a,button,label,input{
 
    &__h2{
       margin: 1em auto;
-      font-size: 36px;
+      font-size: 3.6rem;
       font-weight: 400;
       max-width: 383px;
    }
@@ -391,7 +393,7 @@ p,a,button,label,input{
       margin-top: .5em;
       display: block;
       color: #000;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 800;
    }
 
@@ -401,7 +403,7 @@ p,a,button,label,input{
       margin: .5rem auto;
       color: $--grey-color;
       font-family: Raleway;
-      font-size: 17px;
+      font-size: 1.7rem;
       font-weight: 400;
    }
 }
@@ -632,7 +634,7 @@ p,a,button,label,input{
    }
    &__h2{
       text-align: center;
-      font-size: 36px;
+      font-size: 3.6rem;
       font-weight: 400;
       margin-bottom: 1em;
    }
@@ -716,7 +718,7 @@ p,a,button,label,input{
          justify-content: space-between;
        
          .card__button{
-            bottom: -16%;
+            bottom: -10%;
          }
       }
    }
@@ -742,7 +744,7 @@ p,a,button,label,input{
    
    &__button {
       color: $--blue-color;
-      font-size: 20px;
+      font-size: 2rem;
       cursor: pointer;
    }
 
@@ -800,7 +802,7 @@ p,a,button,label,input{
    margin: 0 auto;
 
    &__h2{
-      font-size: 40px;
+      font-size: 4rem;
       font-weight: 400;
       margin-bottom: .5em;
    }
@@ -826,14 +828,14 @@ p,a,button,label,input{
    &__p--grey{
       display: inline-block;
       color: $--grey-color;
-      font-size: 16px;
+      font-size: 1.6rem;
       font-weight: 400;         
    }
 
    &__label{
       display: block;
       color: $--blue-color;
-      font-size: 11px;
+      font-size: 1.1rem;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 3.28px;
@@ -852,7 +854,7 @@ p,a,button,label,input{
    &__name-error, &__email-error{
       visibility: hidden;
       color: $--red-color;
-      font-size: 12px;
+      font-size: 1.2rem;
       height: 4em;
    }
 
@@ -891,7 +893,7 @@ p,a,button,label,input{
 
    &__p--darker{
       color: $--darkerGrey-color;
-      font-size: 12px;
+      font-size: 1.2rem;
       font-weight: 400;
    }
 
@@ -911,7 +913,7 @@ p,a,button,label,input{
       gap:3em; 
       
       &__h2{
-         font-size: 49px;
+         font-size: 4.9rem;
       }
       &__column{
          width: 50%;
@@ -960,13 +962,13 @@ p,a,button,label,input{
 
    &__h3{
       color: $--blue-color;
-      font-size: 26px;
+      font-size: 2.6rem;
       font-weight: 300;
    }
 
    &__p{
       color: $--grey-color;
-      font-size: 11px;
+      font-size: 1.1rem;
       font-weight: 400;
    }
 }

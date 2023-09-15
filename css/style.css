@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 1rem;
 }
 
 body {
@@ -29,7 +30,7 @@ p, a, button, label, input {
   text-align: center;
 }
 .modal__h2 {
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 300;
 }
 .modal__button--close {
@@ -61,7 +62,7 @@ p, a, button, label, input {
   visibility: hidden;
   margin-top: 0.5em;
   color: #EB476E;
-  font-size: 12px;
+  font-size: 1.2rem;
   height: 4em;
 }
 .modal .correct {
@@ -74,7 +75,7 @@ p, a, button, label, input {
   border: none;
   border-radius: 40px;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   background-color: rgb(8, 166, 228);
   width: 50%;
@@ -107,7 +108,7 @@ p, a, button, label, input {
   display: inline-block;
   color: rgb(8, 166, 228);
   font-family: "Raleway", sans-serif;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: 300;
 }
 .nav__img {
@@ -124,7 +125,7 @@ p, a, button, label, input {
 .nav__li {
   display: block;
   color: #A5A5A5;
-  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 3.28px;
   text-transform: uppercase;
@@ -174,7 +175,7 @@ p, a, button, label, input {
   position: fixed;
   bottom: 4em;
   right: 0.5em;
-  font-size: 30px;
+  font-size: 3rem;
   color: rgb(8, 166, 228);
   filter: drop-shadow(0px 1px 2px #000);
 }
@@ -185,14 +186,14 @@ p, a, button, label, input {
 }
 .hero__h1 {
   color: #000;
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 .hero__p {
   margin: 1em auto;
   max-width: 300px;
   color: #000;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 .hero__button {
@@ -202,7 +203,7 @@ p, a, button, label, input {
   border: none;
   border-radius: 40px;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   background-color: rgb(8, 166, 228);
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
@@ -220,7 +221,7 @@ p, a, button, label, input {
 }
 .hero__h2 {
   margin: 1em auto;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 400;
   max-width: 383px;
 }
@@ -238,7 +239,7 @@ p, a, button, label, input {
   margin-top: 0.5em;
   display: block;
   color: #000;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 800;
 }
 .hero__span--light {
@@ -247,7 +248,7 @@ p, a, button, label, input {
   margin: 0.5rem auto;
   color: #A5A5A5;
   font-family: Raleway;
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 
@@ -285,12 +286,12 @@ p, a, button, label, input {
 }
 .benefits .card__h3 {
   max-width: 225px;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 1em;
 }
 .benefits .card__p {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .benefits .card__icon, .benefits .card__icon--alt {
@@ -335,12 +336,12 @@ p, a, button, label, input {
 }
 .benefits .card--Alt__h3 {
   max-width: 225px;
-  font-size: 30px;
+  font-size: 3rem;
   font-weight: 400;
   margin-bottom: 1em;
 }
 .benefits .card--Alt__p {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 .benefits .card__flex .card__icon {
@@ -467,7 +468,7 @@ p, a, button, label, input {
 }
 .pricing__h2 {
   text-align: center;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 400;
   margin-bottom: 1em;
 }
@@ -488,17 +489,17 @@ p, a, button, label, input {
 }
 .pricing .card .card__column--left .card__h3 {
   color: #13253B;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .pricing .card .card__column--left .card__p {
   color: #EB476E;
-  font-size: 46px;
+  font-size: 4.6rem;
   font-weight: 300;
 }
 .pricing .card .card__column--left .card__span {
   color: #13253B;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .pricing .card .card__column--right {
@@ -511,7 +512,7 @@ p, a, button, label, input {
 }
 .pricing .card .card__column--right .card__item .card__p {
   display: inline-block;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-left: 0.5em;
 }
@@ -539,13 +540,13 @@ p, a, button, label, input {
   border: none;
   border-radius: 40px;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   position: absolute;
   width: 150px;
   left: 50%;
-  bottom: -22%;
-  transform: translate(-50%, -50%);
+  bottom: -15%;
+  transform: translateX(-50%);
 }
 .pricing .card .card__button {
   background-color: #EB476E;
@@ -568,17 +569,17 @@ p, a, button, label, input {
 }
 .pricing .card--blue .card__column--left .card__h3 {
   color: #13253B;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .pricing .card--blue .card__column--left .card__p {
   color: #EB476E;
-  font-size: 46px;
+  font-size: 4.6rem;
   font-weight: 300;
 }
 .pricing .card--blue .card__column--left .card__span {
   color: #13253B;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .pricing .card--blue .card__column--right {
@@ -591,7 +592,7 @@ p, a, button, label, input {
 }
 .pricing .card--blue .card__column--right .card__item .card__p {
   display: inline-block;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-left: 0.5em;
 }
@@ -619,13 +620,13 @@ p, a, button, label, input {
   border: none;
   border-radius: 40px;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   position: absolute;
   width: 150px;
   left: 50%;
-  bottom: -22%;
-  transform: translate(-50%, -50%);
+  bottom: -15%;
+  transform: translateX(-50%);
 }
 .pricing .card--blue .card__column--left .card__p {
   color: rgb(8, 166, 228);
@@ -663,17 +664,17 @@ p, a, button, label, input {
 }
 .pricing .card--green .card__column--left .card__h3 {
   color: #13253B;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .pricing .card--green .card__column--left .card__p {
   color: #EB476E;
-  font-size: 46px;
+  font-size: 4.6rem;
   font-weight: 300;
 }
 .pricing .card--green .card__column--left .card__span {
   color: #13253B;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .pricing .card--green .card__column--right {
@@ -686,7 +687,7 @@ p, a, button, label, input {
 }
 .pricing .card--green .card__column--right .card__item .card__p {
   display: inline-block;
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 400;
   margin-left: 0.5em;
 }
@@ -714,13 +715,13 @@ p, a, button, label, input {
   border: none;
   border-radius: 40px;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   position: absolute;
   width: 150px;
   left: 50%;
-  bottom: -22%;
-  transform: translate(-50%, -50%);
+  bottom: -15%;
+  transform: translateX(-50%);
 }
 .pricing .card--green .card__column--left .card__p {
   color: #55DFB4;
@@ -748,7 +749,7 @@ p, a, button, label, input {
     justify-content: space-between;
   }
   .pricing__flex .card .card__button, .pricing__flex .card--blue .card__button, .pricing__flex .card--green .card__button {
-    bottom: -16%;
+    bottom: -10%;
   }
 }
 .slider {
@@ -769,7 +770,7 @@ p, a, button, label, input {
 }
 .slider__button {
   color: rgb(8, 166, 228);
-  font-size: 20px;
+  font-size: 2rem;
   cursor: pointer;
 }
 .slider #prevBtn {
@@ -816,7 +817,7 @@ p, a, button, label, input {
   margin: 0 auto;
 }
 .contact__h2 {
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 400;
   margin-bottom: 0.5em;
 }
@@ -837,13 +838,13 @@ p, a, button, label, input {
 .contact__p--grey {
   display: inline-block;
   color: #A5A5A5;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 .contact__label {
   display: block;
   color: rgb(8, 166, 228);
-  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3.28px;
@@ -858,7 +859,7 @@ p, a, button, label, input {
 .contact__name-error, .contact__email-error {
   visibility: hidden;
   color: #EB476E;
-  font-size: 12px;
+  font-size: 1.2rem;
   height: 4em;
 }
 .contact__input:focus {
@@ -890,14 +891,14 @@ p, a, button, label, input {
   border: none;
   border-radius: 40px;
   color: #FFF;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   background-color: rgb(8, 166, 228);
   box-shadow: 5px 10px 14px 0px rgba(7, 172, 230, 0.2901960784);
 }
 .contact__p--darker {
   color: #707070;
-  font-size: 12px;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 .contact__feedback {
@@ -913,7 +914,7 @@ p, a, button, label, input {
     gap: 3em;
   }
   .contact__h2 {
-    font-size: 49px;
+    font-size: 4.9rem;
   }
   .contact__column {
     width: 50%;
@@ -954,12 +955,12 @@ p, a, button, label, input {
 }
 .footer__h3 {
   color: rgb(8, 166, 228);
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 300;
 }
 .footer__p {
   color: #A5A5A5;
-  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: 400;
 }
 
