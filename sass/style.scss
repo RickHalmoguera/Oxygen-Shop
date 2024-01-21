@@ -162,7 +162,6 @@ p,a,button,label,input{
 }
 
 .modal{
-
    margin: auto;
    padding: 2.5em;
    border-radius: 10px ;
@@ -255,6 +254,7 @@ p,a,button,label,input{
    }
 
    &__img{
+      cursor: pointer;
       position: absolute;
       display: inline-block;
       right: 1em;
@@ -749,6 +749,7 @@ p,a,button,label,input{
    }
 
    #prevBtn{
+      cursor: pointer;
       position: absolute;
       top: 50%;
       left: .2em;
@@ -756,6 +757,7 @@ p,a,button,label,input{
    }
 
    #nextBtn{
+      cursor: pointer;
       position: absolute;
       top: 50%;
       right: .2em;
