@@ -176,12 +176,16 @@ p,a,button,label,input{
    &__button--close{
       cursor: pointer;
       position: absolute;
-      font-size: 1.2rem;
-      top: .7em;
+      font-size: 2rem;
+      top: .2em;
       right: .7em;
       background-color: transparent;
       border: none;
       color: $--blue-color;
+
+      &:focus{
+         outline: none;
+      }
    }
 
    &__input{

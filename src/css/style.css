@@ -36,15 +36,12 @@ p, a, button, label, input {
 .modal__button--close {
   cursor: pointer;
   position: absolute;
-  font-size: 2rem;
-  top: 0.2em;
+  font-size: 1.2rem;
+  top: 0.7em;
   right: 0.7em;
   background-color: transparent;
   border: none;
   color: rgb(8, 166, 228);
-}
-.modal__button--close:focus {
-  outline: none;
 }
 .modal__input {
   margin-top: 2em;
